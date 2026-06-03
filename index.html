@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L&H Pet Shop - Propuesta</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER RETAIL STYLE -->
+    <div class="header-top">
+      <div class="container">
+        Despacho gratis por compras sobre $30.000 en la Región Metropolitana
+      </div>
+    </div>
+
+    <header class="header" style="position: relative;">
+      <div class="container header-main">
+        <a href="#" class="logo">
+          <img
+            src="https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png?59&t=1780435523"
+            alt="L&H Pet Shop"
+          />
+        </a>
+
+        <div class="search-bar">
+          <input type="text" placeholder="¿Qué buscas para tu mascota?" />
+          <button type="submit">Buscar</button>
+        </div>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header-actions">
+          <div class="action-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+            Ingresar
+          </div>
+          <div class="action-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+              />
+            </svg>
+            Carro (0)
+          </div>
+        </div>
+      </div>
+      <!-- NEW NAVIGATION BAR -->
+      <nav class="header-nav">
+        <div class="container">
+          <ul class="nav-list">
+            <li class="nav-item has-dropdown">
+              <a href="#"
+                >Perros
+                <i class="bi bi-chevron-down" style="font-size: 12px"></i
+              ></a>
+              <div class="dropdown-menu mega-menu">
+                <div class="mega-column">
+                  <h4>Alimentos</h4>
+                  <ul>
+                    <li><a href="#">Seco</a></li>
+                    <li><a href="#">Húmedo</a></li>
+                    <li><a href="#">Dietas Veterinarias</a></li>
+                    <li><a href="#">Cachorros</a></li>
+                  </ul>
+                </div>
+                <div class="mega-column">
+                  <h4>Snacks y Huesos</h4>
+                  <ul>
+                    <li><a href="#">Galletas</a></li>
+                    <li><a href="#">Huesos</a></li>
+                    <li><a href="#">Masticables</a></li>
+                  </ul>
+                </div>
+                <div class="mega-column">
+                  <h4>Accesorios</h4>
+                  <ul>
+                    <li><a href="#">Camas</a></li>
+                    <li><a href="#">Collares y Correas</a></li>
+                    <li><a href="#">Platos</a></li>
+                    <li><a href="#">Juguetes</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="#"
+                >Gatos <i class="bi bi-chevron-down" style="font-size: 12px"></i
+              ></a>
+              <div class="dropdown-menu mega-menu">
+                <div class="mega-column">
+                  <h4>Alimentos</h4>
+                  <ul>
+                    <li><a href="#">Seco</a></li>
+                    <li><a href="#">Húmedo</a></li>
+                    <li><a href="#">Dietas Veterinarias</a></li>
+                    <li><a href="#">Gatitos</a></li>
+                  </ul>
+                </div>
+                <div class="mega-column">
+                  <h4>Arenas e Higiene</h4>
+                  <ul>
+                    <li><a href="#">Arenas Sanitarias</a></li>
+                    <li><a href="#">Baños</a></li>
+                    <li><a href="#">Palas</a></li>
+                  </ul>
+                </div>
+                <div class="mega-column">
+                  <h4>Accesorios</h4>
+                  <ul>
+                    <li><a href="#">Camas y Rascadores</a></li>
+                    <li><a href="#">Juguetes</a></li>
+                    <li><a href="#">Platos</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="#"
+                >Otras Mascotas
+                <i class="bi bi-chevron-down" style="font-size: 12px"></i
+              ></a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Aves</a></li>
+                  <li><a href="#">Peces</a></li>
+                  <li><a href="#">Pequeños Mamíferos</a></li>
+                  <li><a href="#">Reptiles</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#">Marcas</a></li>
+            <li class="nav-item">
+              <a href="#" style="color: #ffc107; font-weight: 700"
+                ><i class="bi bi-tag-fill"></i> Ofertas</a
+              >
+            </li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO JUMBO STYLE -->
+    <section
+      class="hero-jumbo-section"
+      style="
+        background: url(&quot;assets/bg-pet2.webp&quot;) center/cover no-repeat;
+        padding: 40px 0;
+      "
+    >
+      <div class="container">
+        <div
+          class="carousel-wrapper"
+          style="
+            border: 1px solid var(--color-primary);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+          "
+        >
+          <div
+            class="carousel-track"
+            style="
+              display: flex;
+              overflow-x: auto;
+              scroll-snap-type: x mandatory;
+              scrollbar-width: none;
+              width: 100%;
+              height: 100%;
+            "
+          >
+            <!-- Slide 1 -->
+            <div
+              class="hero-jumbo"
+              style="flex: 0 0 100%; scroll-snap-align: start; border-radius: 0"
+            >
+              <div class="hero-jumbo-content">
+                <h1>Lo mejor para<br /><span>Tu Mascota</span></h1>
+                <p>
+                  Encuentra alimentos premium, suplementos y los mejores
+                  accesorios para su cuidado y felicidad.
+                </p>
+                <div>
+                  <a href="#" class="btn btn-light">Comprar ahora</a>
+                </div>
+              </div>
+              <div class="hero-jumbo-image">
+                <img src="assets/hero_pets_together.png" alt="Mascota feliz" />
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div
+              class="hero-jumbo"
+              style="flex: 0 0 100%; scroll-snap-align: start; border-radius: 0; background: linear-gradient(to right, rgba(79,98,170,0.97) 0%, rgba(154,149,224,0.5) 100%), url('assets/bg-pet.webp') center/cover no-repeat;"
+            >
+              <div class="hero-jumbo-content">
+                <h1>Cuidado<br /><span>Especializado</span></h1>
+                <p>
+                  Las mejores marcas internacionales para garantizar la salud de
+                  tu compañero.
+                </p>
+                <div>
+                  <a href="#" class="btn btn-light">Ver Novedades</a>
+                </div>
+              </div>
+              <div class="hero-jumbo-image">
+                <img src="assets/hero_hygiene.png" alt="Higiene de mascotas" />
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div
+              class="hero-jumbo"
+              style="flex: 0 0 100%; scroll-snap-align: start; border-radius: 0"
+            >
+              <div class="hero-jumbo-content">
+                <h1>Accesorios<br /><span>Premium</span></h1>
+                <p>
+                  Encuentra las mejores camas, correas y juguetes con descuentos
+                  imperdibles.
+                </p>
+                <div>
+                  <a href="#" class="btn btn-light">Explorar Colección</a>
+                </div>
+              </div>
+              <div class="hero-jumbo-image">
+                <img src="assets/hero_accessories.png" alt="Accesorios" />
+              </div>
+            </div>
+          </div>
+          <!-- Controles -->
+          <button class="carousel-control prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="carousel-control next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+
+          <!-- Indicadores -->
+          <div
+            class="carousel-indicators"
+            style="
+              position: absolute;
+              bottom: 16px;
+              left: 50%;
+              transform: translateX(-50%);
+              display: flex;
+              gap: 8px;
+              z-index: 10;
+            "
+          >
+            <div
+              class="dot active"
+              data-index="0"
+              style="
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #fff;
+                cursor: pointer;
+              "
+            ></div>
+            <div
+              class="dot"
+              data-index="1"
+              style="
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.4);
+                cursor: pointer;
+              "
+            ></div>
+            <div
+              class="dot"
+              data-index="2"
+              style="
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.4);
+                cursor: pointer;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS GRID -->
+    <section
+      class="products-section"
+      style="background-color: #ffffff; padding: 48px 0"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Productos Destacados</h2>
+          <a href="#" class="view-all">Ver todos los productos</a>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="badge badge-new">Nuevo</div>
+            <div class="product-image">
+              <img
+                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg"
+                alt="Pro Plan Optihealth"
+              />
+            </div>
+            <div class="product-brand">Pro Plan</div>
+            <div class="product-title">
+              Pro Plan Optihealth Sabor Carne En Salsa En Sobre De 100g
+            </div>
+            <div class="product-price">
+              <span class="price-current">$1.511</span>
+            </div>
+            <button class="btn">Agregar al carro</button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg"
+                alt="Arena Fit"
+              />
+            </div>
+            <div class="product-brand">Fit Formula</div>
+            <div class="product-title">Arena Fit Lavanda 10 KG Aglutinante</div>
+            <div class="product-price">
+              <span class="price-current">$9.990</span>
+            </div>
+            <button class="btn">Agregar al carro</button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="badge">-5%</div>
+            <div class="product-image">
+              <img
+                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg"
+                alt="Royal Canin"
+              />
+            </div>
+            <div class="product-brand">Royal Canin</div>
+            <div class="product-title">ROYAL CANIN URINARY CARE 1.5KG</div>
+            <div class="product-price">
+              <span class="price-current">$15.770</span>
+              <span class="price-old">$16.600</span>
+            </div>
+            <button class="btn">Agregar al carro</button>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg"
+                alt="Josera Kitten"
+              />
+            </div>
+            <div class="product-brand">Josera</div>
+            <div class="product-title">
+              Josera Kitten 2 Kilos Libre De Granos L&H
+            </div>
+            <div class="product-price">
+              <span class="price-current">$17.990</span>
+            </div>
+            <button class="btn">Agregar al carro</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER PROMOCIONAL HORIZONTAL -->
+    <section class="promo-banner-section" style="padding: 0; margin: 40px 0">
+      <div class="container">
+        <div
+          style="
+            background: linear-gradient(135deg, var(--color-purple) 0%, var(--color-purple-light) 100%);
+            color: #fff;
+            padding: 24px 32px;
+            border-radius: var(--radius-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+          "
+        >
+          <div style="display: flex; align-items: center; gap: 16px">
+            <i class="bi bi-truck" style="font-size: 2rem"></i>
+            <div style="text-align: left">
+              <h3 style="margin: 0; font-size: 18px">Despacho Gratis</h3>
+              <p style="margin: 0; font-size: 14px; opacity: 0.9">
+                En compras superiores a $30.000 en la RM
+              </p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 16px">
+            <i
+              class="bi bi-star-fill"
+              style="font-size: 2rem; color: #ffc107"
+            ></i>
+            <div style="text-align: left">
+              <h3 style="margin: 0; font-size: 18px">Marcas Top de Línea</h3>
+              <p style="margin: 0; font-size: 14px; opacity: 0.9">
+                La mejor nutrición para tu mascota
+              </p>
+            </div>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="btn"
+              style="
+                background: #fff;
+                color: var(--color-primary);
+                border: none;
+              "
+              >Comprar Ahora</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- CATEGORIES (OVERLAY PREMIUM STYLE) -->
+    <section class="categories-section" style="padding: 48px 0">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Categorías Principales</h2>
+        </div>
+        <div class="categories-overlay-grid">
+            <a href="#" class="category-overlay">
+              <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/alimentoperro8199.png?59&t=1780511307" alt="Comida Perro" />
+              <div class="overlay-content">
+                <span>Comida Perro</span>
+              </div>
+            </a>
+            <a href="#" class="category-overlay">
+              <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/comidagatos8200.png?59&t=1780511307" alt="Comida Gato" />
+              <div class="overlay-content">
+                <span>Comida Gato</span>
+              </div>
+            </a>
+
+            <a href="#" class="category-overlay">
+              <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/accesoriosyjuguetes8200.png?59&t=1780511307" alt="Accesorios y Juegos" />
+              <div class="overlay-content">
+                <span>Accesorios y Juegos</span>
+              </div>
+            </a>
+            <a href="#" class="category-overlay">
+              <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/higiene8352.png?59&t=1780511307" alt="Higiene" />
+              <div class="overlay-content">
+                <span>Higiene</span>
+              </div>
+            </a>
+
+            <a href="#" class="category-overlay">
+              <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/exoticos8200.png?59&t=1780511307" alt="Exóticos" />
+              <div class="overlay-content">
+                <span>Exóticos</span>
+              </div>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER HORIZONTAL -->
+    <section class="banner-section" style="padding-bottom: 48px;">
+      <div class="container">
+        <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          <img src="assets/banner-pet.webp" alt="Promoción" style="width: 100%; height: auto; display: block; object-fit: cover;" />
+        </a>
+      </div>
+    </section>
+
+    <!-- OFERTAS DE LA SEMANA -->
+    <section
+      class="products-section"
+      style="background-color: #fdf5f7; padding: 48px 0"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Ofertas de la semana</h2>
+          <a href="#" class="view-all">Ver todas las ofertas</a>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="badge">-15%</div>
+            <div class="product-image">
+              <img
+                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg"
+                alt="Josera Kitten"
+              />
+            </div>
+            <div class="product-brand">Josera</div>
+            <div class="product-title">
+              Josera Kitten 2 Kilos Libre De Granos L&H
+            </div>
+            <div class="product-price">
+              <span class="price-current">$17.990</span>
+              <span class="price-old">$21.100</span>
+            </div>
+            <button class="btn">Agregar al carro</button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="badge">-5%</div>
+            <div class="product-image">
+              <img
+                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg"
+                alt="Royal Canin"
+              />
+            </div>
+            <div class="product-brand">Royal Canin</div>
+            <div class="product-title">ROYAL CANIN URINARY CARE 1.5KG</div>
+            <div class="product-price">
+              <span class="price-current">$15.770</span>
+              <span class="price-old">$16.600</span>
+            </div>
+            <button class="btn">Agregar al carro</button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="badge">-10%</div>
+            <div class="product-image">
+              <img
+                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg"
+                alt="Arena Fit"
+              />
+            </div>
+            <div class="product-brand">Fit Formula</div>
+            <div class="product-title">Arena Fit Lavanda 10 KG Aglutinante</div>
+            <div class="product-price">
+              <span class="price-current">$9.990</span>
+              <span class="price-old">$11.100</span>
+            </div>
+            <button class="btn">Agregar al carro</button>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="badge">-25%</div>
+            <div class="product-image">
+              <img
+                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg"
+                alt="Pro Plan Optihealth"
+              />
+            </div>
+            <div class="product-brand">Pro Plan</div>
+            <div class="product-title">
+              Pro Plan Optihealth Sabor Carne En Salsa En Sobre De 100g
+            </div>
+            <div class="product-price">
+              <span class="price-current">$1.511</span>
+              <span class="price-old">$2.014</span>
+            </div>
+            <button class="btn">Agregar al carro</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="brands-section" style="overflow: hidden; padding: 48px 0;">
+      <div class="container">
+        <div class="section-header" style="border: none; text-align: center; justify-content: center;">
+          <h2 class="section-title">Marcas destacadas</h2>
+        </div>
+      </div>
+      <div class="brands-marquee-wrapper">
+        <div class="brands-marquee-track">
+          <!-- Original set -->
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/agility9511.png" alt="Agility" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bravery8271.png" alt="Bravery" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/proplan4841.png" alt="Pro Plan" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/josera1998.png" alt="Josera" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/fit-formula5390.png" alt="Fit Formula" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/criadores2825.png" alt="Criadores" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/belcando1961.png" alt="Belcando" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/hills-transforminglives-logo-cmyk-2019-espanol-blanco8097.png" alt="Hill's" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/naturalistic9065.png" alt="Naturalistic" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/cooking7919.jpg" alt="Cooking" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/brit5989.png" alt="Brit Care" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bill-jac3282.png" alt="Bil-Jac" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/n-d0868.png" alt="N&D" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/vetlife8336.png" alt="Vet Life" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/pure-life6114.png" alt="Pure Life" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/dog-evolution8630.png" alt="Dog Evolution" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/prestige3263.png" alt="Prestige" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/nomade3188.png" alt="Nomade" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/taste-of-wild0161.png" alt="Taste of the Wild" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/acana8748.jpg" alt="Acana" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/purina5521.png" alt="Purina" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/monge0437.png" alt="Monge" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/royal-canin1400.png" alt="Royal Canin" /></div>
+          <!-- Duplicado para loop infinito -->
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/agility9511.png" alt="Agility" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bravery8271.png" alt="Bravery" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/proplan4841.png" alt="Pro Plan" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/josera1998.png" alt="Josera" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/fit-formula5390.png" alt="Fit Formula" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/criadores2825.png" alt="Criadores" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/belcando1961.png" alt="Belcando" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/hills-transforminglives-logo-cmyk-2019-espanol-blanco8097.png" alt="Hill's" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/naturalistic9065.png" alt="Naturalistic" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/cooking7919.jpg" alt="Cooking" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/brit5989.png" alt="Brit Care" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bill-jac3282.png" alt="Bil-Jac" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/n-d0868.png" alt="N&D" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/vetlife8336.png" alt="Vet Life" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/pure-life6114.png" alt="Pure Life" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/dog-evolution8630.png" alt="Dog Evolution" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/prestige3263.png" alt="Prestige" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/nomade3188.png" alt="Nomade" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/taste-of-wild0161.png" alt="Taste of the Wild" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/acana8748.jpg" alt="Acana" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/purina5521.png" alt="Purina" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/monge0437.png" alt="Monge" /></div>
+          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/royal-canin1400.png" alt="Royal Canin" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section" style="background: linear-gradient(to right, rgba(13, 78, 100, 0.85), rgba(13, 78, 100, 0.85)), url('assets/bg-pet2.webp') center/cover no-repeat; padding: 80px 0; text-align: center;">
+      <div class="container" style="max-width: 600px;">
+        <h2 style="color: #fff; font-size: 32px; margin-bottom: 16px;">Suscríbete para recibir nuevas ofertas y novedades</h2>
+        <p style="color: rgba(255,255,255,0.8); margin-bottom: 32px; font-size: 16px;">Únete a nuestra comunidad y sé el primero en enterarte de nuestros descuentos exclusivos, tips de cuidado y nuevos ingresos.</p>
+        <form style="display: flex; gap: 8px; justify-content: center; max-width: 500px; margin: 0 auto;">
+          <input type="email" placeholder="Tu correo electrónico" style="flex: 1; padding: 12px 16px; border-radius: var(--radius-sm); border: none; outline: none; font-family: inherit; font-size: 16px;">
+          <button type="button" class="btn btn-light" style="white-space: nowrap;">Suscribirse</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col" style="padding-right: 48px">
+            <img
+              src="https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png?59&t=1780435523"
+              alt="L&H"
+              style="
+                height: 40px;
+                margin-bottom: 16px;
+                filter: brightness(0) invert(1);
+              "
+            />
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 14px;
+                margin-bottom: 24px;
+              "
+            >
+              Venta de alimentos y accesorios premium para mascotas en Santiago,
+              Chile. Marcas internacionales con asesoría personalizada.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Productos</h4>
+            <ul>
+              <li><a href="#">Alimentos</a></li>
+              <li><a href="#">Snacks</a></li>
+              <li><a href="#">Suplementos</a></li>
+              <li><a href="#">Accesorios</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">Despacho</a></li>
+              <li><a href="#">Devoluciones</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="bi bi-geo-alt-fill"></i> Santiago, RM</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-telephone-fill"></i> +56 9 1234 5678</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-envelope-fill"></i> contacto@lhpetshop.cl</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 L&H Pet Shop. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón WhatsApp Flotante -->
+    <a
+      href="#"
+      class="floating-whatsapp"
+      target="_blank"
+      title="Contáctanos por WhatsApp"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Javascript Hamburger Menu -->
+    <script>
+      (function () {
+        const btn = document.getElementById('hamburgerBtn');
+        const nav = document.querySelector('.header-nav');
+
+        // Abrir/cerrar drawer principal
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          btn.classList.toggle('open');
+          nav.classList.toggle('open');
+        });
+
+        // Dropdowns expandibles solo en móvil
+        document.querySelectorAll('.nav-item.has-dropdown > a').forEach((link) => {
+          link.addEventListener('click', (e) => {
+            if (window.innerWidth > 768) return; // desktop: comportamiento hover normal
+            e.preventDefault();
+            e.stopPropagation();
+
+            const item = link.closest('.nav-item');
+            const isOpen = item.classList.contains('mobile-open');
+
+            // Cerrar todos los otros abiertos
+            document.querySelectorAll('.nav-item.mobile-open').forEach((el) => {
+              el.classList.remove('mobile-open');
+            });
+
+            // Abrir el actual si estaba cerrado
+            if (!isOpen) {
+              item.classList.add('mobile-open');
+            }
+          });
+        });
+
+        // Cerrar drawer al hacer click fuera
+        document.addEventListener('click', (e) => {
+          if (!e.target.closest('.header')) {
+            nav.classList.remove('open');
+            btn.classList.remove('open');
+            document.querySelectorAll('.nav-item.mobile-open').forEach((el) => {
+              el.classList.remove('mobile-open');
+            });
+          }
+        });
+      })();
+    </script>
+
+    <!-- Javascript for Carousels -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const initCarousel = (wrapper) => {
+          const track = wrapper.querySelector(".carousel-track");
+          const slides = Array.from(track.children);
+          const dots = Array.from(wrapper.querySelectorAll(".dot"));
+          let currentIndex = 0;
+          let intervalId;
+
+          const updateDots = (index) => {
+            dots.forEach(
+              (dot) => (dot.style.background = "rgba(255, 255, 255, 0.4)"),
+            );
+            if (dots[index]) {
+              dots[index].style.background = "#fff";
+            }
+          };
+
+          const goToSlide = (index) => {
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            track.scrollTo({
+              left: slideWidth * index,
+              behavior: "smooth",
+            });
+            currentIndex = index;
+            updateDots(index);
+          };
+
+          const nextSlide = () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            goToSlide(currentIndex);
+          };
+
+          const prevSlide = () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            goToSlide(currentIndex);
+          };
+
+          const prevBtn = wrapper.querySelector(".carousel-control.prev");
+          const nextBtn = wrapper.querySelector(".carousel-control.next");
+
+          if (prevBtn) {
+            prevBtn.addEventListener("click", () => {
+              stopAutoplay();
+              prevSlide();
+              startAutoplay();
+            });
+          }
+
+          if (nextBtn) {
+            nextBtn.addEventListener("click", () => {
+              stopAutoplay();
+              nextSlide();
+              startAutoplay();
+            });
+          }
+
+          const startAutoplay = () => {
+            intervalId = setInterval(nextSlide, 4000);
+          };
+
+          const stopAutoplay = () => {
+            clearInterval(intervalId);
+          };
+
+          // Initialize dots click
+          dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+              stopAutoplay();
+              goToSlide(index);
+              startAutoplay();
+            });
+          });
+
+          // Track scroll events to sync dots if manually swiped
+          track.addEventListener("scroll", () => {
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            const index = Math.round(track.scrollLeft / slideWidth);
+            if (index !== currentIndex) {
+              currentIndex = index;
+              updateDots(currentIndex);
+            }
+          });
+
+          // Pause on hover
+          wrapper.addEventListener("mouseenter", stopAutoplay);
+          wrapper.addEventListener("mouseleave", startAutoplay);
+
+          startAutoplay();
+        };
+
+        // Initialize all carousels on the page
+        document
+          .querySelectorAll(".carousel-wrapper, .bento-main")
+          .forEach((wrapper) => {
+            if (wrapper.querySelector(".carousel-track")) {
+              initCarousel(wrapper);
+            }
+          });
+      });
+    </script>
+  </body>
+</html>
