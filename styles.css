@@ -1280,3 +1280,131 @@ img {
     right: 16px;
   }
 }
+
+/* ==========================================================
+   PROMO SHELF (Jumbo-style: banner + 4 productos)
+   ========================================================== */
+.promo-shelf {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.promo-shelf--reverse {
+  grid-template-columns: 1fr 260px;
+}
+
+.promo-shelf-banner {
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  min-height: 340px;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-shelf-banner::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+}
+
+.promo-shelf-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: -30px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+
+.promo-shelf-banner-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-shelf-tag {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.promo-shelf-discount {
+  font-size: 72px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  margin: 8px 0;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.promo-shelf-subtitle {
+  color: rgba(255,255,255,0.85);
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.promo-shelf-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Responsive promo-shelf */
+@media (max-width: 1100px) {
+  .promo-shelf-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-shelf,
+  .promo-shelf--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-shelf--reverse .promo-shelf-products {
+    order: -1;
+  }
+
+  .promo-shelf-banner {
+    min-height: 200px;
+    padding: 24px;
+  }
+
+  .promo-shelf-discount {
+    font-size: 48px;
+  }
+
+  .promo-shelf-products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-shelf-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
