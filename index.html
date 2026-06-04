@@ -777,14 +777,20 @@
     </section>
 
     <!-- NEWSLETTER -->
-    <section class="newsletter-section" style="background: linear-gradient(to right, rgba(13, 78, 100, 0.85), rgba(13, 78, 100, 0.85)), url('assets/bg-pet2.webp') center/cover no-repeat; padding: 80px 0; text-align: center;">
-      <div class="container" style="max-width: 600px;">
-        <h2 style="color: #fff; font-size: 32px; margin-bottom: 16px;">Suscríbete para recibir nuevas ofertas y novedades</h2>
-        <p style="color: rgba(255,255,255,0.8); margin-bottom: 32px; font-size: 16px;">Únete a nuestra comunidad y sé el primero en enterarte de nuestros descuentos exclusivos, tips de cuidado y nuevos ingresos.</p>
-        <form style="display: flex; gap: 8px; justify-content: center; max-width: 500px; margin: 0 auto;">
-          <input type="email" placeholder="Tu correo electrónico" style="flex: 1; padding: 12px 16px; border-radius: var(--radius-sm); border: none; outline: none; font-family: inherit; font-size: 16px;">
-          <button type="button" class="btn btn-light" style="white-space: nowrap;">Suscribirse</button>
+    <section class="newsletter-section" style="background: linear-gradient(135deg, #0077b6 0%, #00b4d8 50%, #6c5ce7 100%); padding: 80px 0; text-align: center; position: relative; overflow: hidden;">
+      <!-- Círculos decorativos de fondo -->
+      <div style="position:absolute;top:-60px;left:-60px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,0.06);pointer-events:none;"></div>
+      <div style="position:absolute;bottom:-80px;right:-40px;width:350px;height:350px;border-radius:50%;background:rgba(255,255,255,0.05);pointer-events:none;"></div>
+      <div style="position:absolute;top:30px;right:15%;width:120px;height:120px;border-radius:50%;background:rgba(255,224,102,0.1);pointer-events:none;"></div>
+      <div class="container" style="max-width: 600px; position:relative; z-index:2;">
+        <div style="display:inline-block; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.3); border-radius:50px; padding:6px 18px; font-size:12px; font-weight:700; color:#ffe066; letter-spacing:1px; text-transform:uppercase; margin-bottom:20px;">✉ Newsletter</div>
+        <h2 style="color: #fff; font-size: 36px; font-weight:800; margin-bottom: 16px; line-height:1.2;">Suscríbete y recibe<br><span style="color:#ffe066;">ofertas exclusivas</span></h2>
+        <p style="color: rgba(255,255,255,0.88); margin-bottom: 36px; font-size: 16px; line-height:1.6;">Únete a nuestra comunidad y sé el primero en enterarte de descuentos, tips de cuidado y nuevos ingresos.</p>
+        <form style="display: flex; gap: 0; justify-content: center; max-width: 500px; margin: 0 auto; border-radius: var(--radius-sm); overflow:hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.2);">
+          <input type="email" placeholder="Tu correo electrónico" style="flex: 1; padding: 14px 20px; border: none; outline: none; font-family: inherit; font-size: 15px; border-radius:0;">
+          <button type="button" style="background: linear-gradient(135deg, #ffe066, #ffb700); color:#1a1a2e; border:none; padding: 14px 28px; font-weight:800; font-size:14px; cursor:pointer; white-space:nowrap; transition: opacity 0.2s;">Suscribirse →</button>
         </form>
+        <p style="color:rgba(255,255,255,0.55); font-size:12px; margin-top:16px;">Sin spam. Puedes darte de baja cuando quieras.</p>
       </div>
     </section>
 
