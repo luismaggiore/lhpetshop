@@ -765,8 +765,8 @@ img {
 }
 
 .badge.badge-new {
-  background: linear-gradient(135deg, #d5d2e9, #d5d2e9);
-  box-shadow: 0 2px 6px rgba(123,120,200,0.35);
+  background: linear-gradient(135deg, #ac2478, #eb95bf);
+  box-shadow: 0 2px 6px rgba(172,36,120,0.35);
 }
 
 .product-image {
@@ -812,7 +812,7 @@ img {
 
 .price-old {
   font-size: 13px;
-  color: #d5d2e9;
+  color: #999;
   text-decoration: line-through;
   margin-left: 8px;
 }
