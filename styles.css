@@ -1395,19 +1395,60 @@ img {
 }
 
 @media (max-width: 768px) {
-  /* Shelf: banner arriba, productos abajo */
+  /* Shelf: columna única */
   .promo-shelf,
   .promo-shelf--reverse {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
+  /* Reverse: productos primero, banner abajo */
   .promo-shelf--reverse .promo-shelf-products {
     order: -1;
   }
 
-  /* Banner: ocultar en mobile, solo mostrar productos */
+  /* Banner: franja horizontal compacta */
   .promo-shelf-banner {
-    display: none;
+    display: flex;
+    min-height: auto;
+    padding: 14px 20px;
+    border-radius: 10px;
+  }
+
+  .promo-shelf-banner-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+    text-align: left;
+  }
+
+  .promo-shelf-tag {
+    font-size: 10px;
+    padding: 3px 8px;
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .promo-shelf-discount {
+    font-size: 22px;
+    margin: 2px 0;
+    line-height: 1.1;
+  }
+
+  .promo-shelf-subtitle {
+    font-size: 11px;
+    text-align: left;
+  }
+
+  /* Botón dentro del banner en mobile */
+  .promo-shelf-banner .btn {
+    flex-shrink: 0;
+    font-size: 12px !important;
+    padding: 8px 14px !important;
+    margin-top: 0 !important;
+    white-space: nowrap;
   }
 
   .promo-shelf-products {
