@@ -1444,54 +1444,58 @@ img {
     order: -1;
   }
 
-  /* Banner: franja horizontal compacta */
+  /* Banner: franja full-width con texto centrado */
   .promo-shelf-banner {
     display: flex;
     min-height: auto;
-    padding: 14px 20px;
+    padding: 16px 20px;
     border-radius: 10px;
   }
 
   .promo-shelf-banner-inner {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    gap: 12px;
-    text-align: left;
+    gap: 4px;
+    text-align: center;
   }
 
   .promo-shelf-tag {
-    font-size: 10px;
-    padding: 3px 8px;
-    margin-bottom: 4px;
-    display: block;
+    font-size: 11px;
+    padding: 3px 10px;
   }
 
   .promo-shelf-discount {
-    font-size: 22px;
+    font-size: 28px;
     margin: 2px 0;
     line-height: 1.1;
   }
 
   .promo-shelf-subtitle {
-    font-size: 11px;
-    text-align: left;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 2px;
   }
 
-  /* Botón dentro del banner en mobile */
+  /* Ocultar botón del banner en mobile (el link va debajo del banner) */
   .promo-shelf-banner .btn {
-    flex-shrink: 0;
-    font-size: 12px !important;
-    padding: 8px 14px !important;
-    margin-top: 0 !important;
-    white-space: nowrap;
+    display: none;
   }
+
+  /* En mobile: ocultar view-all del header, mostrar el de debajo del banner */
+  .view-all--desktop { display: none !important; }
+  .view-all--mobile  { display: block !important; font-size: 13px; font-weight: 700; color: var(--color-primary); padding: 6px 0 2px; }
 
   .promo-shelf-products {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
+}
+
+/* Desktop: ocultar el view-all mobile */
+@media (min-width: 769px) {
+  .view-all--mobile { display: none !important; }
 }
 
 /* ==========================================================
