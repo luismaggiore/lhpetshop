@@ -162,92 +162,29 @@
 
   <div class="lh-hero__track" id="lhHeroTrack">
 
-    <!-- ── SLIDE 1: ESPECIAL GATOS ─────────────────────────────── -->
-    <div class="lh-hero__slide" data-slide="0">
-      <!-- Franja título (mobile: top bar | desktop: col izquierda) -->
-      <div class="lh-hero__title" style="
-        background: radial-gradient(ellipse at 30% 50%, #e8e4f5 0%, #d5d2e9 60%, #c8c4e0 100%);
-      ">
-        <span class="lh-hero__tag">del 4 al 10 de Julio</span>
-        <h2 class="lh-hero__heading" style="color: #ac2478;">Especial<br>Gatos</h2>
-      </div>
-
-      <!-- Foto central -->
-      <div class="lh-hero__photo">
-        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=420&h=364&fit=crop&auto=format" alt="Especial Gatos" />
-      </div>
-
-      <!-- Detalle + ilustración superpuesta -->
-      <div class="lh-hero__detail" style="
-        background: radial-gradient(ellipse at 70% 50%, #ede9f7 0%, #d5d2e9 70%, #ccc8e4 100%);
-      ">
-        <!-- Ilustración flotante (superpuesta entre foto y detalle) -->
-        <div class="lh-hero__illustration">
-          <img src="assets/i-gato.webp" alt="" aria-hidden="true" />
-        </div>
-        <div class="lh-hero__detail-content">
-          <p class="lh-hero__detail-text" style="color: #ac2478;">Lo mejor para<br>tu michi</p>
-          <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png?59&t=1780435523"
-               alt="L&H Pet Shop" class="lh-hero__logo" />
-        </div>
-      </div>
+    <div class="lh-hero__slide">
+      <picture>
+        <source media="(max-width: 700px)" srcset="assets/banner-01mobile.webp">
+        <img src="assets/banner-01_2.webp" alt="Especial Gatos" />
+      </picture>
     </div>
 
-    <!-- ── SLIDE 2: OFERTAS SEMANALES ─────────────────────────── -->
-    <div class="lh-hero__slide" data-slide="1">
-      <div class="lh-hero__title" style="
-        background: radial-gradient(ellipse at 30% 50%, #f56060 0%, #ef4748 60%, #d93535 100%);
-      ">
-        <h2 class="lh-hero__heading" style="color: #fff;">Ofertas<br>Semanales</h2>
-      </div>
-
-      <div class="lh-hero__photo">
-        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=420&h=364&fit=crop&auto=format" alt="Ofertas Semanales" />
-      </div>
-
-      <div class="lh-hero__detail" style="
-        background: radial-gradient(ellipse at 70% 50%, #1a6b7a 0%, #134f63 60%, #0d3a4a 100%);
-      ">
-        <div class="lh-hero__illustration">
-          <img src="assets/i-ofertas.webp" alt="" aria-hidden="true" />
-        </div>
-        <div class="lh-hero__detail-content">
-          <p class="lh-hero__detail-text" style="color: #dae351;">Descuentos<br>imperdibles en:</p>
-          <p class="lh-hero__detail-sub" style="color: #fff;">Alimento · Juguetes · Higiene</p>
-        </div>
-      </div>
+    <div class="lh-hero__slide">
+      <picture>
+        <source media="(max-width: 700px)" srcset="assets/banner-02mobile.webp">
+        <img src="assets/banner-02.webp" alt="Ofertas Semanales" />
+      </picture>
     </div>
 
-    <!-- ── SLIDE 3: ESPECIAL PERROS ───────────────────────────── -->
-    <div class="lh-hero__slide" data-slide="2">
-      <div class="lh-hero__title" style="
-        background: radial-gradient(ellipse at 30% 50%, #1a6b7a 0%, #134f63 60%, #0d3a4a 100%);
-      ">
-        <span class="lh-hero__tag" style="color: #dae351; border-color: #dae351;">del 4 al 10 de Julio</span>
-        <h2 class="lh-hero__heading" style="color: #dae351;">Especial<br>Perros</h2>
-      </div>
-
-      <div class="lh-hero__photo">
-        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=420&h=364&fit=crop&auto=format" alt="Especial Perros" />
-      </div>
-
-      <div class="lh-hero__detail" style="
-        background: radial-gradient(ellipse at 70% 50%, #7ad4d0 0%, #5ec7cd 60%, #4ab8be 100%);
-      ">
-        <div class="lh-hero__illustration">
-          <img src="assets/i-perro.webp" alt="" aria-hidden="true" />
-        </div>
-        <div class="lh-hero__detail-content">
-          <p class="lh-hero__detail-text" style="color: #134f63;">Todo para<br>tu mejor amigo</p>
-          <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png?59&t=1780435523"
-               alt="L&H Pet Shop" class="lh-hero__logo" style="filter: brightness(0) saturate(100%) invert(19%) sepia(50%) saturate(600%) hue-rotate(155deg);" />
-        </div>
-      </div>
+    <div class="lh-hero__slide">
+      <picture>
+        <source media="(max-width: 700px)" srcset="assets/banner-03mobile.webp">
+        <img src="assets/banner-03.webp" alt="Especial Perros" />
+      </picture>
     </div>
 
-  </div><!-- /track -->
+  </div>
 
-  <!-- Flechas -->
   <button class="lh-hero__arrow lh-hero__arrow--prev" id="lhPrev" aria-label="Anterior">
     <i class="bi bi-chevron-left"></i>
   </button>
@@ -255,7 +192,6 @@
     <i class="bi bi-chevron-right"></i>
   </button>
 
-  <!-- Dots -->
   <div class="lh-hero__dots" role="tablist">
     <button class="lh-hero__dot lh-hero__dot--active" data-dot="0" aria-label="Slide 1"></button>
     <button class="lh-hero__dot" data-dot="1" aria-label="Slide 2"></button>
@@ -266,24 +202,21 @@
 
 <script>
 (function() {
-  const hero    = document.querySelector('.lh-hero');
-  const track   = document.getElementById('lhHeroTrack');
-  const dots    = document.querySelectorAll('.lh-hero__dot');
-  const total   = 3;
-  let current   = 0;
+  const hero  = document.querySelector('.lh-hero');
+  const track = document.getElementById('lhHeroTrack');
+  const dots  = document.querySelectorAll('.lh-hero__dot');
+  const total = 3;
+  let current = 0;
   let timer;
 
   function goTo(n) {
     current = (n + total) % total;
-    // Use pixel offset based on actual slide width (track width / total slides)
-    const slideW = track.scrollWidth / total;
-    track.style.transform = `translateX(-${current * slideW}px)`;
+    track.style.transform = `translateX(-${current * 100}%)`;
     dots.forEach((d, i) => d.classList.toggle('lh-hero__dot--active', i === current));
   }
 
   function next() { goTo(current + 1); }
   function prev() { goTo(current - 1); }
-
   function startAuto() { timer = setInterval(next, 5000); }
   function resetAuto() { clearInterval(timer); startAuto(); }
 
@@ -300,9 +233,6 @@
     const diff = startX - e.changedTouches[0].clientX;
     if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); resetAuto(); }
   });
-
-  // Recalculate on resize
-  window.addEventListener('resize', () => goTo(current));
 
   startAuto();
 })();
