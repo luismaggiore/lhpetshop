@@ -5,7 +5,7 @@
 :root {
   /* Paleta L&H Petshop — Lineamiento Gráfico Oficial */
   --color-primary: #134f63;          /* Teal oscuro — color principal de marca */
-  --color-primary-hover: #1a6b84;    /* Teal medio para hover */
+  --color-primary-hover: #5b69b1;    /* Azul-lila hover */
   --color-secondary: #96d5d2;        /* Turquesa suave */
   --color-yellow: #dae351;           /* Amarillo lima — acento fuerte */
   --color-lilac: #d5d2e9;            /* Lila suave */
@@ -85,7 +85,7 @@ img {
 }
 
 .header-top {
-  background: linear-gradient(90deg, #134f63 0%, #1a6b84 60%, #96d5d2 100%);
+  background: linear-gradient(90deg, #134f63 0%, #5b69b1 60%, #96d5d2 100%);
   color: #fff;
   font-size: 12px;
   text-align: center;
@@ -115,7 +115,7 @@ img {
   border: 2.5px solid var(--color-primary);
   border-radius: var(--radius-sm);
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,119,182,0.12);
+  box-shadow: 0 2px 8px rgba(91,105,177,0.12);
 }
 
 .search-bar input {
@@ -138,7 +138,7 @@ img {
 }
 
 .search-bar button:hover {
-  background: linear-gradient(135deg, #0d3d4f, #134f63);
+  background: linear-gradient(135deg, #4a58a0, #134f63);
 }
 
 .header-actions {
@@ -210,7 +210,7 @@ img {
    HEADER NAV (MEGA MENU)
    ========================================================== */
 .header-nav {
-  background: linear-gradient(90deg, #134f63 0%, #1a6b84 50%, #0d3d4f 100%);
+  background: linear-gradient(90deg, #134f63 0%, #5b69b1 50%, #4a58a0 100%);
   border-top: 1px solid rgba(255,255,255,0.15);
 }
 
@@ -245,7 +245,7 @@ img {
   left: 0;
   background: #fff;
   border: 1px solid var(--color-border);
-  box-shadow: 0 10px 30px rgba(0,119,182,0.15);
+  box-shadow: 0 10px 30px rgba(91,105,177,0.15);
   border-radius: 0 0 var(--radius-md) var(--radius-md);
   opacity: 0;
   visibility: hidden;
@@ -303,7 +303,7 @@ img {
 }
 
 .hero-jumbo {
-  background: linear-gradient(to right, rgba(0, 55, 120, 0.96) 0%, rgba(0, 119, 182, 0.5) 100%), url('assets/bg-pet.webp') center/cover no-repeat;
+  background: linear-gradient(to right, rgba(91,105,177, 0.96) 0%, rgba(91,105,177, 0.5) 100%), url('assets/bg-pet.webp') center/cover no-repeat;
   border-radius: var(--radius-md);
   overflow: hidden;
   display: flex;
@@ -367,7 +367,7 @@ img {
 }
 
 .btn:hover {
-  background: linear-gradient(135deg, #0d3d4f, #134f63);
+  background: linear-gradient(135deg, #4a58a0, #134f63);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(19,79,99,0.45);
 }
@@ -380,7 +380,7 @@ img {
 
 .btn-light:hover {
   background: #fff;
-  color: #023e8a;
+  color: #4a58a0;
 }
 
 .carousel-control {
@@ -569,7 +569,7 @@ img {
 
 .category-item:hover .category-img-wrap {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 119, 182, 0.25);
+  box-shadow: 0 8px 20px rgba(91,105,177, 0.25);
   border-color: #96d5d2;
 }
 
@@ -604,7 +604,7 @@ img {
   text-decoration: none;
   color: var(--color-text-main);
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(0,119,182,0.06);
+  box-shadow: 0 4px 8px rgba(91,105,177,0.06);
 }
 
 .category-pill .pill-img {
@@ -660,7 +660,7 @@ img {
   align-items: flex-end;
   text-decoration: none;
   background-color: var(--color-bg-gray);
-  box-shadow: 0 4px 12px rgba(0,119,182,0.1);
+  box-shadow: 0 4px 12px rgba(91,105,177,0.1);
 }
 
 .category-overlay img {
@@ -822,7 +822,7 @@ img {
 }
 
 .product-card .btn:hover {
-  background: linear-gradient(135deg, #0d3d4f, #134f63);
+  background: linear-gradient(135deg, #4a58a0, #134f63);
   color: #fff;
 }
 
@@ -879,7 +879,7 @@ img {
    FOOTER
    ========================================================== */
 .footer {
-  background: linear-gradient(135deg, #0d2e38 0%, #134f63 60%, #1a6b84 100%);
+  background: linear-gradient(135deg, #0d2e38 0%, #134f63 60%, #5b69b1 100%);
   color: #fff;
   padding: 64px 0 24px 0;
 }
