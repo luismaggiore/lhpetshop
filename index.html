@@ -159,7 +159,7 @@
      Estructura: [Título] [Foto] [Detalle+Ilustración superpuesta]
      Desktop: 1920×364px | Mobile: 700×350px
      ============================================================ -->
-<div class="container" style="padding-top:10px; padding-bottom:8px; position:relative;">
+<div class="container lh-carousel-wrapper" style="padding-top:10px; padding-bottom:0;">
   <div id="lhCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="border-radius:16px; overflow:hidden;">
 
     <div class="carousel-inner">
@@ -190,13 +190,15 @@
       <span class="carousel-control-next-icon"></span>
     </button>
 
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="2"></button>
-    </div>
-
   </div>
+
+  <!-- Indicadores fuera del carousel -->
+  <div class="lh-carousel-dots">
+    <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="0" class="lh-dot active" aria-current="true"></button>
+    <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="1" class="lh-dot"></button>
+    <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="2" class="lh-dot"></button>
+  </div>
+
 </div>
 
     <!-- CATEGORIES -->
@@ -889,5 +891,26 @@
       });
     </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Sincronizar dots externos con el carousel Bootstrap
+    (function() {
+      const carousel = document.getElementById('lhCarousel');
+      const dots = document.querySelectorAll('.lh-dot');
+      if (!carousel || !dots.length) return;
+
+      // Click en dot → ir al slide
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          bootstrap.Carousel.getInstance(carousel).to(i);
+        });
+      });
+
+      // Slide cambia → actualizar dot activo
+      carousel.addEventListener('slid.bs.carousel', (e) => {
+        dots.forEach(d => d.classList.remove('active'));
+        if (dots[e.to]) dots[e.to].classList.add('active');
+      });
+    })();
+  </script>
 </body>
 </html>
