@@ -2077,3 +2077,36 @@ body, p, a, li, input, button, label {
     font-size: 12px;
   }
 }
+
+/* Flechas de categorías (solo mobile) */
+.cat-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #134f63;
+  background: #fff;
+  color: #134f63;
+  font-size: 16px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s, color 0.2s;
+}
+.cat-arrow:hover {
+  background: #134f63;
+  color: #fff;
+}
+.cat-arrow--prev { left: -12px; }
+.cat-arrow--next { right: -12px; }
+
+@media (max-width: 768px) {
+  .cat-arrow {
+    display: flex;
+  }
+}
