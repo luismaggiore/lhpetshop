@@ -70,7 +70,7 @@ img {
   font-size: 24px;
   font-weight: 700;
   color: var(--color-primary);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 /* ==========================================================
@@ -210,7 +210,7 @@ img {
    HEADER NAV (MEGA MENU)
    ========================================================== */
 .header-nav {
-  background: #134f63;
+  background: linear-gradient(90deg, #134f63 0%, #5ec7cd 50%, #134f63 100%);
   border-top: 1px solid rgba(255,255,255,0.15);
 }
 
@@ -265,7 +265,7 @@ img {
 .dropdown-menu.mega-menu {
   display: flex;
   gap: 32px;
-  padding: 32px;
+  padding: 20px;
   min-width: 600px;
 }
 
@@ -313,7 +313,7 @@ img {
 
 .hero-jumbo-content {
   flex: 1;
-  padding: 36px 48px;
+  padding: 28px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -441,7 +441,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px;
+  padding: 28px 24px;
 }
 
 .bento-main img {
@@ -474,7 +474,7 @@ img {
   background: linear-gradient(135deg, #96d5d2 0%, #134f63 100%);
   color: #fff;
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -499,7 +499,7 @@ img {
 .bento-side-2 {
   background: linear-gradient(135deg, #f4fafa 0%, #d5d2e9 100%);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -602,7 +602,7 @@ img {
   background-color: #fff;
   border: 2px solid var(--color-border);
   border-radius: 50px;
-  padding: 8px 24px 8px 8px;
+  padding: 6px 16px 6px 6px;
   gap: 12px;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -694,7 +694,7 @@ img {
 .overlay-content {
   position: relative;
   z-index: 3;
-  padding: 24px;
+  padding: 16px;
   width: 100%;
 }
 
@@ -737,7 +737,7 @@ img {
   background: #fff;
   border: 2px solid #96d5d2;
   border-radius: var(--radius-md);
-  padding: 16px;
+  padding: 12px;
   position: relative;
   transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
   display: flex;
@@ -836,7 +836,7 @@ img {
    ========================================================== */
 .brands-section {
   padding: 48px 0;
-  border-top: 2px solid var(--color-border);
+  
   overflow: hidden;
 }
 
@@ -884,7 +884,7 @@ img {
    FOOTER
    ========================================================== */
 .footer {
-  background: #0a2f3a;
+  background: linear-gradient(135deg, #134f63 0%, #134f63 60%, #5ec7cd 100%);
   color: #fff;
   padding: 64px 0 24px 0;
 }
@@ -899,7 +899,7 @@ img {
 .footer-col h4 {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: #96d5d2;
@@ -938,10 +938,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: none;
-  border-image: none;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #134f63, #96d5d2, var(--color-border)) 1;
 }
 
 .section-header h2 {
@@ -1382,7 +1382,7 @@ img {
 
   .promo-shelf-banner {
     min-height: 200px;
-    padding: 24px;
+    padding: 16px;
   }
 
   .promo-shelf-discount {
@@ -1622,7 +1622,7 @@ body, p, a, li, input, button, label {
 
   .promo-shelf-banner {
     min-height: 200px;
-    padding: 24px;
+    padding: 16px;
   }
 
   .promo-shelf-discount {
@@ -1733,7 +1733,7 @@ body, p, a, li, input, button, label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 36px 40px;
+  padding: 24px 28px;
   gap: 14px;
   position: relative;
   z-index: 1;
@@ -1783,7 +1783,7 @@ body, p, a, li, input, button, label {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 36px 40px 36px 90px;
+  padding: 24px 28px 24px 72px;
   overflow: visible;
   z-index: 1;
 }
