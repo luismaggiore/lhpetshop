@@ -303,7 +303,7 @@ img {
 }
 
 .hero-jumbo {
-  background: linear-gradient(to right, rgba(91,105,177, 0.96) 0%, rgba(91,105,177, 0.5) 100%), url('assets/bg-pet.webp') center/cover no-repeat;
+  background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%);
   border-radius: var(--radius-md);
   overflow: hidden;
   display: flex;
