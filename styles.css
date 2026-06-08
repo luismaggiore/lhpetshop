@@ -89,7 +89,7 @@ img {
   color: #fff;
   font-size: 12px;
   text-align: center;
-  padding: 6px 16px;
+  padding: 6px 0;
   font-weight: 600;
   letter-spacing: 0.3px;
 }
@@ -98,10 +98,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
   height: var(--header-height);
   gap: 32px;
   padding: 10px;
@@ -214,7 +210,7 @@ img {
    HEADER NAV (MEGA MENU)
    ========================================================== */
 .header-nav {
-  background: linear-gradient(90deg, #134f63 0%, #5ec7cd 50%, #134f63 100%);
+  background: #134f63;
   border-top: 1px solid rgba(255,255,255,0.15);
 }
 
@@ -888,7 +884,7 @@ img {
    FOOTER
    ========================================================== */
 .footer {
-  background: linear-gradient(135deg, #134f63 0%, #134f63 60%, #5ec7cd 100%);
+  background: #0a2f3a;
   color: #fff;
   padding: 64px 0 24px 0;
 }
@@ -944,8 +940,8 @@ img {
   align-items: baseline;
   margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to right, #134f63, #96d5d2, var(--color-border)) 1;
+  border-bottom: none;
+  border-image: none;
 }
 
 .section-header h2 {
