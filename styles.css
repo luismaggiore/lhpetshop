@@ -942,8 +942,8 @@ img {
   align-items: baseline;
   margin-bottom: 24px;
   padding-bottom: 12px;
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to right, #134f63, #96d5d2, var(--color-border)) 1;
+  border-bottom: none;
+  border-image: none;
 }
 
 .section-header h2 {
