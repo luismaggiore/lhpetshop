@@ -1477,7 +1477,7 @@ body, p, a, li, input, button, label {
 /* Slide — ocupa 100% del viewport del hero */
 .lh-hero__slide {
   display: grid;
-  grid-template-columns: 280px 1fr 340px;
+  grid-template-columns: 280px 420px 1fr;
   min-width: 100%;
   height: 100%;
   overflow: hidden;
