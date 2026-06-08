@@ -206,7 +206,15 @@
           <h2 class="section-title" style="font-family: 'Montserrat', sans-serif;">Categorías Principales</h2>
         </div>
         <!-- scroll horizontal en mobile, 5 col en desktop -->
-        <div class="cat-scroll-row">
+        <div style="position:relative;">
+          <!-- Flechas mobile -->
+          <button class="cat-arrow cat-arrow--prev" onclick="catScroll(-1)" aria-label="Anterior">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="cat-arrow cat-arrow--next" onclick="catScroll(1)" aria-label="Siguiente">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        <div class="cat-scroll-row" id="catRow">
           <a href="#" class="cat-card">
             <div class="cat-card__img">
               <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/alimentoperro8199.png?59&t=1780511307" alt="Comida Perro" />
@@ -247,76 +255,6 @@
         <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
           <img src="assets/banner-pet.webp" alt="Promoción" style="width: 100%; height: auto; display: block; object-fit: cover;" />
         </a>
-      </div>
-    </section>
-
-    <!-- BANNERS 2 COLUMNAS -->
-    <section style="padding: 0; margin: 40px 0 16px 0;">
-      <div class="container">
-        <div class="top-promo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-
-          <!-- Banner 1: Texto institucional -->
-          <a href="#" style="display:flex; align-items:center; gap:24px; background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%); border-radius: 10px; padding: 32px 32px; text-decoration:none; overflow:hidden; position:relative; min-height:130px;">
-            <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
-              <i class="bi bi-heart-fill" style="font-size:28px; color:#fff;"></i>
-            </div>
-            <div style="position:relative; z-index:2;">
-              <div style="color:#fff; font-size:16px; font-weight:600; line-height:1.6;">En nuestra tienda encontrarás los mejores productos para el cuidado y bienestar de tu mascota,</div>
-              <div style="color:#dae351; font-size:16px; font-weight:700; line-height:1.6;">respondemos tus dudas y consultas las <span style="font-size:22px; font-weight:900;">24 horas</span>.</div>
-            </div>
-          </a>
-
-          <!-- Banner 2: Descuentos -->
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; background: linear-gradient(135deg, #ac2478 0%, #eb95bf 100%); border-radius: 10px; padding: 32px 32px; overflow:hidden; position:relative; min-height:130px;">
-            <div style="display:flex; align-items:center; gap:20px; position:relative; z-index:2;">
-              <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
-                <i class="bi bi-tag-fill" style="font-size:28px; color:#fff;"></i>
-              </div>
-              <div>
-                <div style="color:#fdd646; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Ofertas de la semana</div>
-                <div style="color:#fff; font-size:22px; font-weight:900; line-height:1.2;">Hasta 30% de descuento</div>
-                <div style="color:rgba(255,255,255,0.85); font-size:13px; margin-top:5px;">En productos seleccionados</div>
-              </div>
-            </div>
-            <a href="#" style="flex-shrink:0; position:relative; z-index:2; background:#fdd646; color:#134f63; font-weight:800; font-size:14px; padding:12px 24px; border-radius:6px; text-decoration:none; white-space:nowrap;">Ver ofertas →</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- BANNER ANCHO: DESPACHO GRATIS + MARCAS -->
-    <section class="promo-banner-section" style="padding: 0; margin: 0 0 40px 0;">
-      <div class="container">
-        <div style="
-          background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%);
-          color: #fff;
-          padding: 24px 32px;
-          border-radius: var(--radius-md);
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 16px;
-        ">
-          <div style="display: flex; align-items: center; gap: 16px">
-            <i class="bi bi-truck" style="font-size: 2rem"></i>
-            <div style="text-align: left">
-              <h3 style="margin: 0; font-size: 18px">Despacho Gratis</h3>
-              <p style="margin: 0; font-size: 14px; opacity: 0.9">En compras superiores a $30.000 en la RM</p>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 16px">
-            <i class="bi bi-star-fill" style="font-size: 2rem; color: #fdd646"></i>
-            <div style="text-align: left">
-              <h3 style="margin: 0; font-size: 18px">Marcas Top de Línea</h3>
-              <p style="margin: 0; font-size: 14px; opacity: 0.9">La mejor nutrición para tu mascota</p>
-            </div>
-          </div>
-          <div>
-            <a href="#" class="btn" style="background: #fff; color: var(--color-primary); border: none;">Comprar Ahora</a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -544,6 +482,76 @@
     </section>
 
     <!-- BRANDS -->
+    <!-- BANNERS 2 COLUMNAS -->
+    <section style="padding: 0; margin: 40px 0 16px 0;">
+      <div class="container">
+        <div class="top-promo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+
+          <!-- Banner 1: Texto institucional -->
+          <a href="#" style="display:flex; align-items:center; gap:24px; background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%); border-radius: 10px; padding: 32px 32px; text-decoration:none; overflow:hidden; position:relative; min-height:130px;">
+            <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <i class="bi bi-heart-fill" style="font-size:28px; color:#fff;"></i>
+            </div>
+            <div style="position:relative; z-index:2;">
+              <div style="color:#fff; font-size:16px; font-weight:600; line-height:1.6;">En nuestra tienda encontrarás los mejores productos para el cuidado y bienestar de tu mascota,</div>
+              <div style="color:#dae351; font-size:16px; font-weight:700; line-height:1.6;">respondemos tus dudas y consultas las <span style="font-size:22px; font-weight:900;">24 horas</span>.</div>
+            </div>
+          </a>
+
+          <!-- Banner 2: Descuentos -->
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; background: linear-gradient(135deg, #ac2478 0%, #eb95bf 100%); border-radius: 10px; padding: 32px 32px; overflow:hidden; position:relative; min-height:130px;">
+            <div style="display:flex; align-items:center; gap:20px; position:relative; z-index:2;">
+              <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                <i class="bi bi-tag-fill" style="font-size:28px; color:#fff;"></i>
+              </div>
+              <div>
+                <div style="color:#fdd646; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Ofertas de la semana</div>
+                <div style="color:#fff; font-size:22px; font-weight:900; line-height:1.2;">Hasta 30% de descuento</div>
+                <div style="color:rgba(255,255,255,0.85); font-size:13px; margin-top:5px;">En productos seleccionados</div>
+              </div>
+            </div>
+            <a href="#" style="flex-shrink:0; position:relative; z-index:2; background:#fdd646; color:#134f63; font-weight:800; font-size:14px; padding:12px 24px; border-radius:6px; text-decoration:none; white-space:nowrap;">Ver ofertas →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER ANCHO: DESPACHO GRATIS + MARCAS -->
+    <section class="promo-banner-section" style="padding: 0; margin: 0 0 40px 0;">
+      <div class="container">
+        <div style="
+          background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%);
+          color: #fff;
+          padding: 24px 32px;
+          border-radius: var(--radius-md);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 16px;
+        ">
+          <div style="display: flex; align-items: center; gap: 16px">
+            <i class="bi bi-truck" style="font-size: 2rem"></i>
+            <div style="text-align: left">
+              <h3 style="margin: 0; font-size: 18px">Despacho Gratis</h3>
+              <p style="margin: 0; font-size: 14px; opacity: 0.9">En compras superiores a $30.000 en la RM</p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 16px">
+            <i class="bi bi-star-fill" style="font-size: 2rem; color: #fdd646"></i>
+            <div style="text-align: left">
+              <h3 style="margin: 0; font-size: 18px">Marcas Top de Línea</h3>
+              <p style="margin: 0; font-size: 14px; opacity: 0.9">La mejor nutrición para tu mascota</p>
+            </div>
+          </div>
+          <div>
+            <a href="#" class="btn" style="background: #fff; color: var(--color-primary); border: none;">Comprar Ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="brands-section" style="overflow: hidden; padding: 48px 0;">
       <div class="container">
         <div class="section-header" style="border: none; text-align: center; justify-content: center;">
@@ -848,5 +856,12 @@
       });
     </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function catScroll(dir) {
+  var row = document.getElementById('catRow');
+  row.scrollBy({ left: dir * 160, behavior: 'smooth' });
+}
+</script>
 </body>
 </html>
