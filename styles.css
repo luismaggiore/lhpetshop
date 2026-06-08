@@ -1406,6 +1406,7 @@ img {
 @media (max-width: 640px) {
   .top-promo-grid {
     grid-template-columns: 1fr !important;
+    gap: 12px !important;
   }
 }
 
@@ -1640,14 +1641,6 @@ body, p, a, li, input, button, label {
   }
 }
 
-/* ==========================================================
-   TOP PROMO BANNERS (2 columnas sobre el header)
-   ========================================================== */
-@media (max-width: 640px) {
-  .top-promo-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
 
 /* ==========================================================
    TIPOGRAFÍA OFICIAL — Lineamiento Gráfico L&H
