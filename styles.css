@@ -60,6 +60,7 @@ ul {
    ========================================================== */
 .lh-carousel-wrapper {
   position: relative;
+  padding-bottom: 16px;
 }
 
 .lh-carousel-dots {
@@ -2058,6 +2059,13 @@ body, p, a, li, input, button, label {
 .carousel-control-next {
   width: 44px;
   opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
 }
 
 .carousel-control-prev { left: 0; }
