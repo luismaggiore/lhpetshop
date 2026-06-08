@@ -200,8 +200,11 @@
 </div>
 
     <!-- CATEGORIES -->
-    <section class="categories-section" style="padding: 40px 0 32px 0;">
+    <section class="categories-section" style="padding: 20px 0;">
       <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" style="font-family: 'Montserrat', sans-serif;">Categorías Principales</h2>
+        </div>
         <!-- scroll horizontal en mobile, 5 col en desktop -->
         <div class="cat-scroll-row">
           <a href="#" class="cat-card">
@@ -238,73 +241,82 @@
       </div>
     </section>
 
-
-    <!-- LO MÁS VENDIDO -->
-    <section style="padding: 28px 0;">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" style="font-family:'Montserrat',sans-serif;">Lo más vendido</h2>
-          <a href="#" class="view-all">Ver todo</a>
-        </div>
-        <div class="products-grid">
-          <div class="product-card">
-            <div class="badge">-15%</div>
-            <div class="product-image">
-              <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg" alt="Josera Kitten" />
-            </div>
-            <div class="product-brand">Josera</div>
-            <div class="product-title">Josera Kitten 2 Kilos Libre De Granos</div>
-            <div class="product-price">
-              <span class="price-current">$17.990</span>
-              <span class="price-old">$21.100</span>
-            </div>
-            <button class="btn">Agregar al carro</button>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg" alt="Royal Canin" />
-            </div>
-            <div class="product-brand">Royal Canin</div>
-            <div class="product-title">Royal Canin Urinary Care 1.5kg</div>
-            <div class="product-price">
-              <span class="price-current">$15.770</span>
-            </div>
-            <button class="btn">Agregar al carro</button>
-          </div>
-          <div class="product-card">
-            <div class="badge">-10%</div>
-            <div class="product-image">
-              <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg" alt="Arena Fit" />
-            </div>
-            <div class="product-brand">Fit Formula</div>
-            <div class="product-title">Arena Fit Lavanda 10 KG Aglutinante</div>
-            <div class="product-price">
-              <span class="price-current">$9.990</span>
-              <span class="price-old">$11.100</span>
-            </div>
-            <button class="btn">Agregar al carro</button>
-          </div>
-          <div class="product-card">
-            <div class="badge badge-new">Nuevo</div>
-            <div class="product-image">
-              <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Pro Plan" />
-            </div>
-            <div class="product-brand">Pro Plan</div>
-            <div class="product-title">Pro Plan Adult Chicken & Rice 7.5kg</div>
-            <div class="product-price">
-              <span class="price-current">$42.990</span>
-            </div>
-            <button class="btn">Agregar al carro</button>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- BANNER HORIZONTAL -->
-    <section class="banner-section" style="padding-bottom: 48px;">
+    <section class="banner-section" style="padding-bottom: 24px;">
       <div class="container">
         <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
           <img src="assets/banner-pet.webp" alt="Promoción" style="width: 100%; height: auto; display: block; object-fit: cover;" />
         </a>
+      </div>
+    </section>
+
+    <!-- BANNERS 2 COLUMNAS -->
+    <section style="padding: 0; margin: 20px 0 12px 0;">
+      <div class="container">
+        <div class="top-promo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+
+          <!-- Banner 1: Texto institucional -->
+          <a href="#" style="display:flex; align-items:center; gap:24px; background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%); border-radius: 10px; padding: 20px 24px; text-decoration:none; overflow:hidden; position:relative; min-height:130px;">
+            <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <i class="bi bi-heart-fill" style="font-size:28px; color:#fff;"></i>
+            </div>
+            <div style="position:relative; z-index:2;">
+              <div style="color:#fff; font-size:16px; font-weight:600; line-height:1.6;">En nuestra tienda encontrarás los mejores productos para el cuidado y bienestar de tu mascota,</div>
+              <div style="color:#dae351; font-size:16px; font-weight:700; line-height:1.6;">respondemos tus dudas y consultas las <span style="font-size:22px; font-weight:900;">24 horas</span>.</div>
+            </div>
+          </a>
+
+          <!-- Banner 2: Descuentos -->
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; background: linear-gradient(135deg, #ac2478 0%, #eb95bf 100%); border-radius: 10px; padding: 20px 24px; overflow:hidden; position:relative; min-height:130px;">
+            <div style="display:flex; align-items:center; gap:20px; position:relative; z-index:2;">
+              <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                <i class="bi bi-tag-fill" style="font-size:28px; color:#fff;"></i>
+              </div>
+              <div>
+                <div style="color:#fdd646; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Ofertas de la semana</div>
+                <div style="color:#fff; font-size:22px; font-weight:900; line-height:1.2;">Hasta 30% de descuento</div>
+                <div style="color:rgba(255,255,255,0.85); font-size:13px; margin-top:5px;">En productos seleccionados</div>
+              </div>
+            </div>
+            <a href="#" style="flex-shrink:0; position:relative; z-index:2; background:#fdd646; color:#134f63; font-weight:800; font-size:14px; padding:12px 24px; border-radius:6px; text-decoration:none; white-space:nowrap;">Ver ofertas →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER ANCHO: DESPACHO GRATIS + MARCAS -->
+    <section class="promo-banner-section" style="padding: 0; margin: 0 0 20px 0;">
+      <div class="container">
+        <div style="
+          background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%);
+          color: #fff;
+          padding: 18px 24px;
+          border-radius: var(--radius-md);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 16px;
+        ">
+          <div style="display: flex; align-items: center; gap: 16px">
+            <i class="bi bi-truck" style="font-size: 2rem"></i>
+            <div style="text-align: left">
+              <h3 style="margin: 0; font-size: 18px">Despacho Gratis</h3>
+              <p style="margin: 0; font-size: 14px; opacity: 0.9">En compras superiores a $30.000 en la RM</p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 16px">
+            <i class="bi bi-star-fill" style="font-size: 2rem; color: #fdd646"></i>
+            <div style="text-align: left">
+              <h3 style="margin: 0; font-size: 18px">Marcas Top de Línea</h3>
+              <p style="margin: 0; font-size: 14px; opacity: 0.9">La mejor nutrición para tu mascota</p>
+            </div>
+          </div>
+          <div>
+            <a href="#" class="btn" style="background: #fff; color: var(--color-primary); border: none;">Comprar Ahora</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -531,76 +543,6 @@
       </div>
     </section>
 
-    <!-- BANNERS 2 COLUMNAS -->
-    <section style="padding: 0; margin: 40px 0 16px 0;">
-      <div class="container">
-        <div class="top-promo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-
-          <!-- Banner 1: Texto institucional -->
-          <a href="#" style="display:flex; align-items:center; gap:24px; background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%); border-radius: 10px; padding: 32px 32px; text-decoration:none; overflow:hidden; position:relative; min-height:130px;">
-            <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
-              <i class="bi bi-heart-fill" style="font-size:28px; color:#fff;"></i>
-            </div>
-            <div style="position:relative; z-index:2;">
-              <div style="color:#fff; font-size:16px; font-weight:600; line-height:1.6;">En nuestra tienda encontrarás los mejores productos para el cuidado y bienestar de tu mascota,</div>
-              <div style="color:#dae351; font-size:16px; font-weight:700; line-height:1.6;">respondemos tus dudas y consultas las <span style="font-size:22px; font-weight:900;">24 horas</span>.</div>
-            </div>
-          </a>
-
-          <!-- Banner 2: Descuentos -->
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; background: linear-gradient(135deg, #ac2478 0%, #eb95bf 100%); border-radius: 10px; padding: 32px 32px; overflow:hidden; position:relative; min-height:130px;">
-            <div style="display:flex; align-items:center; gap:20px; position:relative; z-index:2;">
-              <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
-                <i class="bi bi-tag-fill" style="font-size:28px; color:#fff;"></i>
-              </div>
-              <div>
-                <div style="color:#fdd646; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Ofertas de la semana</div>
-                <div style="color:#fff; font-size:22px; font-weight:900; line-height:1.2;">Hasta 30% de descuento</div>
-                <div style="color:rgba(255,255,255,0.85); font-size:13px; margin-top:5px;">En productos seleccionados</div>
-              </div>
-            </div>
-            <a href="#" style="flex-shrink:0; position:relative; z-index:2; background:#fdd646; color:#134f63; font-weight:800; font-size:14px; padding:12px 24px; border-radius:6px; text-decoration:none; white-space:nowrap;">Ver ofertas →</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- BANNER ANCHO: DESPACHO GRATIS + MARCAS -->
-    <section class="promo-banner-section" style="padding: 0; margin: 0 0 40px 0;">
-      <div class="container">
-        <div style="
-          background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%);
-          color: #fff;
-          padding: 24px 32px;
-          border-radius: var(--radius-md);
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 16px;
-        ">
-          <div style="display: flex; align-items: center; gap: 16px">
-            <i class="bi bi-truck" style="font-size: 2rem"></i>
-            <div style="text-align: left">
-              <h3 style="margin: 0; font-size: 18px">Despacho Gratis</h3>
-              <p style="margin: 0; font-size: 14px; opacity: 0.9">En compras superiores a $30.000 en la RM</p>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 16px">
-            <i class="bi bi-star-fill" style="font-size: 2rem; color: #fdd646"></i>
-            <div style="text-align: left">
-              <h3 style="margin: 0; font-size: 18px">Marcas Top de Línea</h3>
-              <p style="margin: 0; font-size: 14px; opacity: 0.9">La mejor nutrición para tu mascota</p>
-            </div>
-          </div>
-          <div>
-            <a href="#" class="btn" style="background: #fff; color: var(--color-primary); border: none;">Comprar Ahora</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- BRANDS -->
     <section class="brands-section" style="overflow: hidden; padding: 28px 0;">
       <div class="container">
@@ -681,7 +623,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-grid">
-          <div class="footer-col" style="padding-right: 48px">
+          <div class="footer-col" style="padding-right: 24px">
             <img
               src="https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png?59&t=1780435523"
               alt="L&H"
