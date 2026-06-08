@@ -153,326 +153,162 @@
       </nav>
     </header>
 
-    <!-- HERO JUMBO STYLE -->
-    <section
-      class="hero-jumbo-section"
-      style="
-        background: linear-gradient(135deg, #134f63 0%, #96d5d2 100%);
-        padding: 40px 0;
-      "
-    >
-      <div class="container">
-        <div
-          class="carousel-wrapper"
-          style="
-            border: 1px solid var(--color-primary);
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            position: relative;
-          "
-        >
-          <div
-            class="carousel-track"
-            style="
-              display: flex;
-              overflow-x: auto;
-              scroll-snap-type: x mandatory;
-              scrollbar-width: none;
-              width: 100%;
-              height: 100%;
-            "
-          >
-            <!-- Slide 1 -->
-            <div
-              class="hero-jumbo"
-              style="flex: 0 0 100%; scroll-snap-align: start; border-radius: 0"
-            >
-              <div class="hero-jumbo-content">
-                <h1>Lo mejor para<br /><span>Tu Mascota</span></h1>
-                <p>
-                  Encuentra alimentos premium, suplementos y los mejores
-                  accesorios para su cuidado y felicidad.
-                </p>
-                <div>
-                  <a href="#" class="btn btn-light">Comprar ahora</a>
-                </div>
-              </div>
-              <div class="hero-jumbo-image">
-                <img src="assets/hero_pets_together.png" alt="Mascota feliz" />
-              </div>
-            </div>
-            <!-- Slide 2 -->
-            <div
-              class="hero-jumbo"
-              style="flex: 0 0 100%; scroll-snap-align: start; border-radius: 0; background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%);"
-            >
-              <div class="hero-jumbo-content">
-                <h1>Cuidado<br /><span>Especializado</span></h1>
-                <p>
-                  Las mejores marcas internacionales para garantizar la salud de
-                  tu compañero.
-                </p>
-                <div>
-                  <a href="#" class="btn btn-light">Ver Novedades</a>
-                </div>
-              </div>
-              <div class="hero-jumbo-image">
-                <img src="assets/hero_hygiene.png" alt="Higiene de mascotas" />
-              </div>
-            </div>
-            <!-- Slide 3 -->
-            <div
-              class="hero-jumbo"
-              style="flex: 0 0 100%; scroll-snap-align: start; border-radius: 0"
-            >
-              <div class="hero-jumbo-content">
-                <h1>Accesorios<br /><span>Premium</span></h1>
-                <p>
-                  Encuentra las mejores camas, correas y juguetes con descuentos
-                  imperdibles.
-                </p>
-                <div>
-                  <a href="#" class="btn btn-light">Explorar Colección</a>
-                </div>
-              </div>
-              <div class="hero-jumbo-image">
-                <img src="assets/hero_accessories.png" alt="Accesorios" />
-              </div>
-            </div>
-          </div>
-          <!-- Controles -->
-          <button class="carousel-control prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-          <button class="carousel-control next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
+<!-- ============================================================
+     HERO CAROUSEL — L&H Petshop
+     Estructura: [Título] [Foto] [Detalle+Ilustración superpuesta]
+     Desktop: 1920×364px | Mobile: 700×350px
+     ============================================================ -->
+<section class="lh-hero" aria-label="Promociones destacadas">
 
-          <!-- Indicadores -->
-          <div
-            class="carousel-indicators"
-            style="
-              position: absolute;
-              bottom: 16px;
-              left: 50%;
-              transform: translateX(-50%);
-              display: flex;
-              gap: 8px;
-              z-index: 10;
-            "
-          >
-            <div
-              class="dot active"
-              data-index="0"
-              style="
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background: #fff;
-                cursor: pointer;
-              "
-            ></div>
-            <div
-              class="dot"
-              data-index="1"
-              style="
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background: rgba(255, 255, 255, 0.4);
-                cursor: pointer;
-              "
-            ></div>
-            <div
-              class="dot"
-              data-index="2"
-              style="
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background: rgba(255, 255, 255, 0.4);
-                cursor: pointer;
-              "
-            ></div>
-          </div>
+  <div class="lh-hero__track" id="lhHeroTrack">
+
+    <!-- ── SLIDE 1: ESPECIAL GATOS ─────────────────────────────── -->
+    <div class="lh-hero__slide" data-slide="0">
+      <!-- Franja título (mobile: top bar | desktop: col izquierda) -->
+      <div class="lh-hero__title" style="
+        background: radial-gradient(ellipse at 30% 50%, #e8e4f5 0%, #d5d2e9 60%, #c8c4e0 100%);
+      ">
+        <span class="lh-hero__tag">del 4 al 10 de Julio</span>
+        <h2 class="lh-hero__heading" style="color: #ac2478;">Especial<br>Gatos</h2>
+      </div>
+
+      <!-- Foto central -->
+      <div class="lh-hero__photo">
+        <img src="https://placehold.co/700x364/96d5d2/134f63?text=Foto+Gato" alt="Especial Gatos" />
+      </div>
+
+      <!-- Detalle + ilustración superpuesta -->
+      <div class="lh-hero__detail" style="
+        background: radial-gradient(ellipse at 70% 50%, #ede9f7 0%, #d5d2e9 70%, #ccc8e4 100%);
+      ">
+        <!-- Ilustración flotante (superpuesta entre foto y detalle) -->
+        <div class="lh-hero__illustration">
+          <img src="https://placehold.co/220x280/d5d2e9/ac2478?text=🐱+Ilustración" alt="" aria-hidden="true" />
+        </div>
+        <div class="lh-hero__detail-content">
+          <p class="lh-hero__detail-text" style="color: #ac2478;">Lo mejor para<br>tu michi</p>
+          <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png?59&t=1780435523"
+               alt="L&H Pet Shop" class="lh-hero__logo" />
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- PRODUCTS GRID -->
-    <section
-      class="products-section"
-      style="background-color: #ffffff; padding: 48px 0"
-    >
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" style="font-family: 'Montserrat', sans-serif;">Productos Destacados</h2>
-          <a href="#" class="view-all">Ver todos los productos</a>
+    <!-- ── SLIDE 2: OFERTAS SEMANALES ─────────────────────────── -->
+    <div class="lh-hero__slide" data-slide="1">
+      <div class="lh-hero__title" style="
+        background: radial-gradient(ellipse at 30% 50%, #f56060 0%, #ef4748 60%, #d93535 100%);
+      ">
+        <h2 class="lh-hero__heading" style="color: #fff;">Ofertas<br>Semanales</h2>
+      </div>
+
+      <div class="lh-hero__photo">
+        <img src="https://placehold.co/700x364/ef4748/fff?text=Foto+Perros" alt="Ofertas Semanales" />
+      </div>
+
+      <div class="lh-hero__detail" style="
+        background: radial-gradient(ellipse at 70% 50%, #1a6b7a 0%, #134f63 60%, #0d3a4a 100%);
+      ">
+        <div class="lh-hero__illustration">
+          <img src="https://placehold.co/220x280/134f63/dae351?text=🐶+Ilustración" alt="" aria-hidden="true" />
         </div>
-
-        <div class="products-grid">
-          <!-- Product 1 -->
-          <div class="product-card">
-            <div class="badge badge-new">Nuevo</div>
-            <div class="product-image">
-              <img
-                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg"
-                alt="Pro Plan Optihealth"
-              />
-            </div>
-            <div class="product-brand">Pro Plan</div>
-            <div class="product-title">
-              Pro Plan Optihealth Sabor Carne En Salsa En Sobre De 100g
-            </div>
-            <div class="product-price">
-              <span class="price-current">$1.511</span>
-            </div>
-            <button class="btn">Agregar al carro</button>
-          </div>
-
-          <!-- Product 2 -->
-          <div class="product-card">
-            <div class="product-image">
-              <img
-                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg"
-                alt="Arena Fit"
-              />
-            </div>
-            <div class="product-brand">Fit Formula</div>
-            <div class="product-title">Arena Fit Lavanda 10 KG Aglutinante</div>
-            <div class="product-price">
-              <span class="price-current">$9.990</span>
-            </div>
-            <button class="btn">Agregar al carro</button>
-          </div>
-
-          <!-- Product 3 -->
-          <div class="product-card">
-            <div class="badge">-5%</div>
-            <div class="product-image">
-              <img
-                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg"
-                alt="Royal Canin"
-              />
-            </div>
-            <div class="product-brand">Royal Canin</div>
-            <div class="product-title">ROYAL CANIN URINARY CARE 1.5KG</div>
-            <div class="product-price">
-              <span class="price-current">$15.770</span>
-              <span class="price-old">$16.600</span>
-            </div>
-            <button class="btn">Agregar al carro</button>
-          </div>
-
-          <!-- Product 4 -->
-          <div class="product-card">
-            <div class="product-image">
-              <img
-                src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg"
-                alt="Josera Kitten"
-              />
-            </div>
-            <div class="product-brand">Josera</div>
-            <div class="product-title">
-              Josera Kitten 2 Kilos Libre De Granos L&H
-            </div>
-            <div class="product-price">
-              <span class="price-current">$17.990</span>
-            </div>
-            <button class="btn">Agregar al carro</button>
-          </div>
+        <div class="lh-hero__detail-content">
+          <p class="lh-hero__detail-text" style="color: #dae351;">Descuentos<br>imperdibles en:</p>
+          <p class="lh-hero__detail-sub" style="color: #fff;">Alimento · Juguetes · Higiene</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- BANNER PROMOCIONAL HORIZONTAL -->
-    <!-- BANNERS 2 COLUMNAS -->
-    <section style="padding: 0; margin: 40px 0 16px 0;">
-      <div class="container">
-        <div class="top-promo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+    <!-- ── SLIDE 3: ESPECIAL PERROS ───────────────────────────── -->
+    <div class="lh-hero__slide" data-slide="2">
+      <div class="lh-hero__title" style="
+        background: radial-gradient(ellipse at 30% 50%, #1a6b7a 0%, #134f63 60%, #0d3a4a 100%);
+      ">
+        <span class="lh-hero__tag" style="color: #dae351; border-color: #dae351;">del 4 al 10 de Julio</span>
+        <h2 class="lh-hero__heading" style="color: #dae351;">Especial<br>Perros</h2>
+      </div>
 
-          <!-- Banner 1: Texto institucional -->
-          <a href="#" style="display:flex; align-items:center; gap:24px; background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%); border-radius: 10px; padding: 32px 32px; text-decoration:none; overflow:hidden; position:relative; min-height:130px;">
-            <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
-              <i class="bi bi-heart-fill" style="font-size:28px; color:#fff;"></i>
-            </div>
-            <div style="position:relative; z-index:2;">
-              <div style="color:#fff; font-size:16px; font-weight:600; line-height:1.6;">En nuestra tienda encontrarás los mejores productos para el cuidado y bienestar de tu mascota,</div>
-              <div style="color:#fdd646; font-size:16px; font-weight:700; line-height:1.6;">respondemos tus dudas y consultas las <span style="font-size:22px; font-weight:900;">24 horas</span>.</div>
-            </div>
-          </a>
+      <div class="lh-hero__photo">
+        <img src="https://placehold.co/700x364/5ec7cd/134f63?text=Foto+Perros" alt="Especial Perros" />
+      </div>
 
-          <!-- Banner 2: Descuentos -->
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; background: linear-gradient(135deg, #ac2478 0%, #eb95bf 100%); border-radius: 10px; padding: 32px 32px; overflow:hidden; position:relative; min-height:130px;">
-            <div style="display:flex; align-items:center; gap:20px; position:relative; z-index:2;">
-              <div style="flex-shrink:0; width:64px; height:64px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
-                <i class="bi bi-tag-fill" style="font-size:28px; color:#fff;"></i>
-              </div>
-              <div>
-                <div style="color:#fdd646; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Ofertas de la semana</div>
-                <div style="color:#fff; font-size:22px; font-weight:900; line-height:1.2;">Hasta 30% de descuento</div>
-                <div style="color:rgba(255,255,255,0.85); font-size:13px; margin-top:5px;">En productos seleccionados</div>
-              </div>
-            </div>
-            <a href="#" style="flex-shrink:0; position:relative; z-index:2; background:#fdd646; color:#134f63; font-weight:800; font-size:14px; padding:12px 24px; border-radius:6px; text-decoration:none; white-space:nowrap; transition:opacity 0.2s;">Ver ofertas →</a>
-          </div>
-
+      <div class="lh-hero__detail" style="
+        background: radial-gradient(ellipse at 70% 50%, #7ad4d0 0%, #5ec7cd 60%, #4ab8be 100%);
+      ">
+        <div class="lh-hero__illustration">
+          <img src="https://placehold.co/220x280/5ec7cd/134f63?text=🐕+Ilustración" alt="" aria-hidden="true" />
+        </div>
+        <div class="lh-hero__detail-content">
+          <p class="lh-hero__detail-text" style="color: #134f63;">Todo para<br>tu mejor amigo</p>
+          <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png?59&t=1780435523"
+               alt="L&H Pet Shop" class="lh-hero__logo" style="filter: brightness(0) saturate(100%) invert(19%) sepia(50%) saturate(600%) hue-rotate(155deg);" />
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="promo-banner-section" style="padding: 0; margin: 0 0 40px 0;">
-      <div class="container">
-        <div
-          style="
-            background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%);
-            color: #fff;
-            padding: 24px 32px;
-            border-radius: var(--radius-md);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-          "
-        >
-          <div style="display: flex; align-items: center; gap: 16px">
-            <i class="bi bi-truck" style="font-size: 2rem"></i>
-            <div style="text-align: left">
-              <h3 style="margin: 0; font-size: 18px">Despacho Gratis</h3>
-              <p style="margin: 0; font-size: 14px; opacity: 0.9">
-                En compras superiores a $30.000 en la RM
-              </p>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 16px">
-            <i
-              class="bi bi-star-fill"
-              style="font-size: 2rem; color: #fdd646"
-            ></i>
-            <div style="text-align: left">
-              <h3 style="margin: 0; font-size: 18px">Marcas Top de Línea</h3>
-              <p style="margin: 0; font-size: 14px; opacity: 0.9">
-                La mejor nutrición para tu mascota
-              </p>
-            </div>
-          </div>
-          <div>
-            <a
-              href="#"
-              class="btn"
-              style="
-                background: #fff;
-                color: var(--color-primary);
-                border: none;
-              "
-              >Comprar Ahora</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+  </div><!-- /track -->
 
+  <!-- Flechas -->
+  <button class="lh-hero__arrow lh-hero__arrow--prev" id="lhPrev" aria-label="Anterior">
+    <i class="bi bi-chevron-left"></i>
+  </button>
+  <button class="lh-hero__arrow lh-hero__arrow--next" id="lhNext" aria-label="Siguiente">
+    <i class="bi bi-chevron-right"></i>
+  </button>
+
+  <!-- Dots -->
+  <div class="lh-hero__dots" role="tablist">
+    <button class="lh-hero__dot lh-hero__dot--active" data-dot="0" aria-label="Slide 1"></button>
+    <button class="lh-hero__dot" data-dot="1" aria-label="Slide 2"></button>
+    <button class="lh-hero__dot" data-dot="2" aria-label="Slide 3"></button>
+  </div>
+
+</section>
+
+<script>
+(function() {
+  const track   = document.getElementById('lhHeroTrack');
+  const slides  = track.querySelectorAll('.lh-hero__slide');
+  const dots    = document.querySelectorAll('.lh-hero__dot');
+  const total   = slides.length;
+  let current   = 0;
+  let timer;
+
+  function goTo(n) {
+    current = (n + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('lh-hero__dot--active', i === current));
+  }
+
+  function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1); }
+
+  function startAuto() {
+    timer = setInterval(next, 5000);
+  }
+  function resetAuto() {
+    clearInterval(timer);
+    startAuto();
+  }
+
+  document.getElementById('lhNext').addEventListener('click', () => { next(); resetAuto(); });
+  document.getElementById('lhPrev').addEventListener('click', () => { prev(); resetAuto(); });
+  dots.forEach(d => d.addEventListener('click', () => { goTo(+d.dataset.dot); resetAuto(); }));
+
+  // Pause on hover
+  track.closest('.lh-hero').addEventListener('mouseenter', () => clearInterval(timer));
+  track.closest('.lh-hero').addEventListener('mouseleave', startAuto);
+
+  // Touch swipe
+  let startX = 0;
+  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); resetAuto(); }
+  });
+
+  startAuto();
+})();
+</script>
 
 
     <!-- CATEGORIES (OVERLAY PREMIUM STYLE) -->
