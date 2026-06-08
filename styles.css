@@ -1477,6 +1477,7 @@ img {
 /* Desktop: ocultar el view-all mobile */
 @media (min-width: 769px) {
   .view-all--mobile { display: none !important; }
+  .categories-section { margin-top: 12px; }
 }
 
 /* ==========================================================
