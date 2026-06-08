@@ -665,6 +665,7 @@ img {
   text-decoration: none;
   background-color: var(--color-bg-gray);
   box-shadow: 0 4px 12px rgba(91,105,177,0.1);
+  border: 1px solid #134f63;
 }
 
 .category-overlay img {
