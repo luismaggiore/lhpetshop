@@ -100,7 +100,9 @@ img {
   justify-content: space-between;
   height: var(--header-height);
   gap: 32px;
-  padding: 10px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .logo img {
