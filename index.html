@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L&H Pet Shop - Propuesta</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -158,103 +159,45 @@
      Estructura: [Título] [Foto] [Detalle+Ilustración superpuesta]
      Desktop: 1920×364px | Mobile: 700×350px
      ============================================================ -->
-<section style="padding: 20px 0; background: #f4fafa;">
-  <div class="container">
-    <div id="lhCarousel" style="position:relative; border-radius:16px; overflow:hidden;">
+<div class="container" style="padding-top:20px; padding-bottom:20px;">
+  <div id="lhCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="border-radius:16px; overflow:hidden;">
 
-      <!-- VIEWPORT: solo muestra 1 slide a la vez -->
-      <div style="overflow:hidden; display:block; line-height:0;">
-
-        <!-- TRACK: fila de slides, se mueve con margin-left -->
-        <div id="lhTrack" style="display:flex; margin-left:0; transition:margin-left 0.5s ease;">
-
-          <div id="lhSlide0" style="flex:0 0 100%;">
-            <picture>
-              <source media="(max-width:700px)" srcset="assets/banner-01mobile.webp">
-              <img src="assets/banner-01_2.webp" alt="Especial Gatos" style="width:100%;height:auto;display:block;">
-            </picture>
-          </div>
-
-          <div id="lhSlide1" style="flex:0 0 100%;">
-            <picture>
-              <source media="(max-width:700px)" srcset="assets/banner-02mobile.webp">
-              <img src="assets/banner-02.webp" alt="Ofertas Semanales" style="width:100%;height:auto;display:block;">
-            </picture>
-          </div>
-
-          <div id="lhSlide2" style="flex:0 0 100%;">
-            <picture>
-              <source media="(max-width:700px)" srcset="assets/banner-03mobile.webp">
-              <img src="assets/banner-03.webp" alt="Especial Perros" style="width:100%;height:auto;display:block;">
-            </picture>
-          </div>
-
-        </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <picture>
+          <source media="(max-width:700px)" srcset="assets/banner-01mobile.webp">
+          <img src="assets/banner-01_2.webp" class="d-block w-100" alt="Especial Gatos">
+        </picture>
       </div>
-
-      <!-- Flecha izq -->
-      <button onclick="lhMove(-1)" aria-label="Anterior" style="position:absolute;top:50%;left:12px;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:2px solid rgba(255,255,255,0.8);background:rgba(0,0,0,0.3);color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;backdrop-filter:blur(4px);">
-        <i class="bi bi-chevron-left"></i>
-      </button>
-
-      <!-- Flecha der -->
-      <button onclick="lhMove(1)" aria-label="Siguiente" style="position:absolute;top:50%;right:12px;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:2px solid rgba(255,255,255,0.8);background:rgba(0,0,0,0.3);color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;backdrop-filter:blur(4px);">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-
-      <!-- Dots -->
-      <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10;">
-        <span id="lhDot0" style="display:block;width:24px;height:8px;border-radius:4px;background:#fff;cursor:pointer;" onclick="lhGoTo(0)"></span>
-        <span id="lhDot1" style="display:block;width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;" onclick="lhGoTo(1)"></span>
-        <span id="lhDot2" style="display:block;width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;" onclick="lhGoTo(2)"></span>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width:700px)" srcset="assets/banner-02mobile.webp">
+          <img src="assets/banner-02.webp" class="d-block w-100" alt="Ofertas Semanales">
+        </picture>
       </div>
-
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width:700px)" srcset="assets/banner-03mobile.webp">
+          <img src="assets/banner-03.webp" class="d-block w-100" alt="Especial Perros">
+        </picture>
+      </div>
     </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#lhCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#lhCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="2"></button>
+    </div>
+
   </div>
-</section>
-
-<script>
-(function(){
-  var cur = 0, total = 3, timer;
-  var track = document.getElementById('lhTrack');
-
-  function goTo(n) {
-    cur = (n + total) % total;
-    track.style.marginLeft = '-' + (cur * 100) + '%';
-    for (var i = 0; i < total; i++) {
-      var dot = document.getElementById('lhDot' + i);
-      if (i === cur) {
-        dot.style.width = '24px';
-        dot.style.borderRadius = '4px';
-        dot.style.background = '#fff';
-      } else {
-        dot.style.width = '8px';
-        dot.style.borderRadius = '50%';
-        dot.style.background = 'rgba(255,255,255,0.5)';
-      }
-    }
-  }
-
-  window.lhMove = function(d) { goTo(cur + d); reset(); };
-  window.lhGoTo = function(n) { goTo(n); reset(); };
-
-  function start() { timer = setInterval(function(){ goTo(cur + 1); }, 5000); }
-  function reset() { clearInterval(timer); start(); }
-
-  var box = document.getElementById('lhCarousel');
-  box.addEventListener('mouseenter', function(){ clearInterval(timer); });
-  box.addEventListener('mouseleave', start);
-
-  var sx = 0;
-  track.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, {passive:true});
-  track.addEventListener('touchend', function(e){
-    var diff = sx - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) { lhMove(diff > 0 ? 1 : -1); }
-  });
-
-  start();
-})();
-</script>
+</div>
 
 
 
@@ -908,5 +851,6 @@
           });
       });
     </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
