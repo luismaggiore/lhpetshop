@@ -308,12 +308,12 @@ img {
   overflow: hidden;
   display: flex;
   position: relative;
-  min-height: 400px;
+  min-height: 260px;
 }
 
 .hero-jumbo-content {
   flex: 1;
-  padding: 64px;
+  padding: 36px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -321,11 +321,11 @@ img {
 }
 
 .hero-jumbo-content h1 {
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 800;
   color: #fff;
-  line-height: 1.1;
-  margin-bottom: 16px;
+  line-height: 1.15;
+  margin-bottom: 10px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
@@ -334,9 +334,9 @@ img {
 }
 
 .hero-jumbo-content p {
-  font-size: 18px;
+  font-size: 15px;
   color: rgba(255,255,255,0.92);
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   max-width: 400px;
 }
 
