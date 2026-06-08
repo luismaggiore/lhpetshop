@@ -420,7 +420,7 @@ img {
    HERO 2: BENTO STYLE
    ========================================================== */
 .hero-bento-section {
-  padding: 24px 0 48px 0;
+  padding: 28px 0;
   background-color: var(--color-bg-body);
   border-bottom: 2px solid var(--color-border);
 }
@@ -530,7 +530,7 @@ img {
    CATEGORIES (PETCO STYLE)
    ========================================================== */
 .categories-section {
-  padding: 48px 0;
+  padding: 28px 0;
 }
 
 .categories-grid {
@@ -725,7 +725,7 @@ img {
    PRODUCT GRID (RETAIL STYLE)
    ========================================================== */
 .products-section {
-  padding: 48px 0;
+  padding: 28px 0;
   background-color: var(--color-bg-gray);
 }
 
@@ -837,7 +837,7 @@ img {
    BRANDS SECTION
    ========================================================== */
 .brands-section {
-  padding: 48px 0;
+  padding: 28px 0;
   overflow: hidden;
 }
 
@@ -887,14 +887,14 @@ img {
 .footer {
   background: linear-gradient(135deg, #134f63 0%, #134f63 60%, #5ec7cd 100%);
   color: #fff;
-  padding: 64px 0 24px 0;
+  padding: 28px 0 16px 0;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 48px;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .footer-col h4 {
