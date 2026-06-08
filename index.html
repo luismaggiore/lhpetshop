@@ -159,7 +159,7 @@
      Estructura: [Título] [Foto] [Detalle+Ilustración superpuesta]
      Desktop: 1920×364px | Mobile: 700×350px
      ============================================================ -->
-<div class="container" style="padding-top:20px; padding-bottom:20px;">
+<div class="container" style="padding-top:20px; padding-bottom:20px; position:relative;">
   <div id="lhCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="border-radius:16px; overflow:hidden;">
 
     <div class="carousel-inner">
@@ -199,45 +199,44 @@
   </div>
 </div>
 
-    <!-- CATEGORIES (OVERLAY PREMIUM STYLE) -->
-    <section class="categories-section" style="padding: 48px 0">
+    <!-- CATEGORIES -->
+    <section class="categories-section" style="padding: 40px 0 32px 0;">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" style="font-family: 'Montserrat', sans-serif;">Categorías Principales</h2>
         </div>
-        <div class="categories-overlay-grid">
-            <a href="#" class="category-overlay">
+        <!-- scroll horizontal en mobile, 5 col en desktop -->
+        <div class="cat-scroll-row">
+          <a href="#" class="cat-card">
+            <div class="cat-card__img">
               <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/alimentoperro8199.png?59&t=1780511307" alt="Comida Perro" />
-              <div class="overlay-content">
-                <span>Comida Perro</span>
-              </div>
-            </a>
-            <a href="#" class="category-overlay">
+            </div>
+            <span class="cat-card__label">Comida Perro</span>
+          </a>
+          <a href="#" class="cat-card">
+            <div class="cat-card__img">
               <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/comidagatos8200.png?59&t=1780511307" alt="Comida Gato" />
-              <div class="overlay-content">
-                <span>Comida Gato</span>
-              </div>
-            </a>
-
-            <a href="#" class="category-overlay">
+            </div>
+            <span class="cat-card__label">Comida Gato</span>
+          </a>
+          <a href="#" class="cat-card">
+            <div class="cat-card__img">
               <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/accesoriosyjuguetes8200.png?59&t=1780511307" alt="Accesorios y Juegos" />
-              <div class="overlay-content">
-                <span>Accesorios y Juegos</span>
-              </div>
-            </a>
-            <a href="#" class="category-overlay">
+            </div>
+            <span class="cat-card__label">Accesorios y Juegos</span>
+          </a>
+          <a href="#" class="cat-card">
+            <div class="cat-card__img">
               <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/higiene8352.png?59&t=1780511307" alt="Higiene" />
-              <div class="overlay-content">
-                <span>Higiene</span>
-              </div>
-            </a>
-
-            <a href="#" class="category-overlay">
+            </div>
+            <span class="cat-card__label">Higiene</span>
+          </a>
+          <a href="#" class="cat-card">
+            <div class="cat-card__img">
               <img src="https://dojiw2m9tvv09.cloudfront.net/75790/1/exoticos8200.png?59&t=1780511307" alt="Exóticos" />
-              <div class="overlay-content">
-                <span>Exóticos</span>
-              </div>
-            </a>
+            </div>
+            <span class="cat-card__label">Exóticos</span>
+          </a>
         </div>
       </div>
     </section>
