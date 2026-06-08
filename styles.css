@@ -210,7 +210,7 @@ img {
    HEADER NAV (MEGA MENU)
    ========================================================== */
 .header-nav {
-  background: linear-gradient(90deg, #134f63 0%, #5ec7cd 50%, #134f63 100%);
+  background: #134f63;
   border-top: 1px solid rgba(255,255,255,0.15);
 }
 
@@ -884,7 +884,7 @@ img {
    FOOTER
    ========================================================== */
 .footer {
-  background: linear-gradient(135deg, #134f63 0%, #134f63 60%, #5ec7cd 100%);
+  background: #0a2f3a;
   color: #fff;
   padding: 64px 0 24px 0;
 }
