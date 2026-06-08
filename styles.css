@@ -838,7 +838,6 @@ img {
    ========================================================== */
 .brands-section {
   padding: 48px 0;
-  border-top: 2px solid var(--color-border);
   overflow: hidden;
 }
 
