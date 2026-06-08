@@ -1379,8 +1379,6 @@ img {
   overflow: hidden;
 }
 
-
-
 .promo-shelf-banner-inner {
   position: relative;
   z-index: 2;
@@ -1388,34 +1386,24 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
-.promo-shelf-tag {
-  background: rgba(255,255,255,0.2);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 4px 12px;
-  border-radius: 50px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  display: inline-block;
-}
-
-.promo-shelf-discount {
-  font-size: 72px;
+.promo-shelf-title {
+  font-size: 32px;
   font-weight: 900;
   color: #fff;
-  line-height: 1;
-  margin: 8px 0;
-  text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  line-height: 1.1;
+  margin-bottom: 6px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .promo-shelf-subtitle {
-  color: rgba(255,255,255,0.85);
-  font-size: 13px;
-  line-height: 1.5;
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  line-height: 1.4;
   text-align: center;
+  margin: 0;
 }
 
 .promo-shelf-products {
@@ -1444,41 +1432,32 @@ img {
     order: -1;
   }
 
-  /* Banner: franja full-width con texto centrado */
+  /* Banner mobile: franja simple ancho completo */
   .promo-shelf-banner {
-    display: flex;
     min-height: auto;
-    padding: 16px 20px;
+    padding: 14px 16px;
     border-radius: 10px;
   }
 
   .promo-shelf-banner-inner {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    gap: 4px;
-    text-align: center;
+    gap: 2px;
+    text-align: left;
   }
 
-  .promo-shelf-tag {
-    font-size: 11px;
-    padding: 3px 10px;
-  }
-
-  .promo-shelf-discount {
-    font-size: 28px;
-    margin: 2px 0;
-    line-height: 1.1;
+  .promo-shelf-title {
+    font-size: 20px;
+    margin-bottom: 2px;
   }
 
   .promo-shelf-subtitle {
     font-size: 12px;
-    text-align: center;
-    margin-bottom: 2px;
+    text-align: left;
   }
 
-  /* Ocultar botón del banner en mobile (el link va debajo del banner) */
+  /* Ocultar botón del banner en mobile */
   .promo-shelf-banner .btn {
     display: none;
   }
