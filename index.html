@@ -160,114 +160,102 @@
      ============================================================ -->
 <section style="padding: 20px 0; background: #f4fafa;">
   <div class="container">
+    <div id="lhCarousel" style="position:relative; border-radius:16px; overflow:hidden;">
 
-    <!-- CARRUSEL -->
-    <div id="lhCarousel" style="position:relative; border-radius:16px; overflow:hidden; line-height:0;">
+      <!-- VIEWPORT: solo muestra 1 slide a la vez -->
+      <div style="overflow:hidden; display:block; line-height:0;">
 
-      <!-- SLIDES WRAPPER -->
-      <div id="lhSlides" style="display:flex; transition: transform 0.5s ease; will-change:transform;">
+        <!-- TRACK: fila de slides, se mueve con margin-left -->
+        <div id="lhTrack" style="display:flex; margin-left:0; transition:margin-left 0.5s ease;">
 
-        <!-- Slide 1 -->
-        <div style="min-width:100%; flex-shrink:0;">
-          <picture>
-            <source media="(max-width:700px)" srcset="assets/banner-01mobile.webp">
-            <img src="assets/banner-01_2.webp" alt="Especial Gatos"
-                 style="width:100%; height:auto; display:block;">
-          </picture>
+          <div id="lhSlide0" style="flex:0 0 100%;">
+            <picture>
+              <source media="(max-width:700px)" srcset="assets/banner-01mobile.webp">
+              <img src="assets/banner-01_2.webp" alt="Especial Gatos" style="width:100%;height:auto;display:block;">
+            </picture>
+          </div>
+
+          <div id="lhSlide1" style="flex:0 0 100%;">
+            <picture>
+              <source media="(max-width:700px)" srcset="assets/banner-02mobile.webp">
+              <img src="assets/banner-02.webp" alt="Ofertas Semanales" style="width:100%;height:auto;display:block;">
+            </picture>
+          </div>
+
+          <div id="lhSlide2" style="flex:0 0 100%;">
+            <picture>
+              <source media="(max-width:700px)" srcset="assets/banner-03mobile.webp">
+              <img src="assets/banner-03.webp" alt="Especial Perros" style="width:100%;height:auto;display:block;">
+            </picture>
+          </div>
+
         </div>
+      </div>
 
-        <!-- Slide 2 -->
-        <div style="min-width:100%; flex-shrink:0;">
-          <picture>
-            <source media="(max-width:700px)" srcset="assets/banner-02mobile.webp">
-            <img src="assets/banner-02.webp" alt="Ofertas Semanales"
-                 style="width:100%; height:auto; display:block;">
-          </picture>
-        </div>
-
-        <!-- Slide 3 -->
-        <div style="min-width:100%; flex-shrink:0;">
-          <picture>
-            <source media="(max-width:700px)" srcset="assets/banner-03mobile.webp">
-            <img src="assets/banner-03.webp" alt="Especial Perros"
-                 style="width:100%; height:auto; display:block;">
-          </picture>
-        </div>
-
-      </div><!-- /slides -->
-
-      <!-- FLECHAS -->
-      <button onclick="lhMove(-1)" aria-label="Anterior" style="
-        position:absolute; top:50%; left:12px; transform:translateY(-50%);
-        width:40px; height:40px; border-radius:50%; border:2px solid rgba(255,255,255,0.7);
-        background:rgba(0,0,0,0.25); color:#fff; font-size:18px; cursor:pointer;
-        display:flex; align-items:center; justify-content:center; z-index:10;
-        backdrop-filter:blur(4px); transition:background 0.2s;">
+      <!-- Flecha izq -->
+      <button onclick="lhMove(-1)" aria-label="Anterior" style="position:absolute;top:50%;left:12px;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:2px solid rgba(255,255,255,0.8);background:rgba(0,0,0,0.3);color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;backdrop-filter:blur(4px);">
         <i class="bi bi-chevron-left"></i>
       </button>
-      <button onclick="lhMove(1)" aria-label="Siguiente" style="
-        position:absolute; top:50%; right:12px; transform:translateY(-50%);
-        width:40px; height:40px; border-radius:50%; border:2px solid rgba(255,255,255,0.7);
-        background:rgba(0,0,0,0.25); color:#fff; font-size:18px; cursor:pointer;
-        display:flex; align-items:center; justify-content:center; z-index:10;
-        backdrop-filter:blur(4px); transition:background 0.2s;">
+
+      <!-- Flecha der -->
+      <button onclick="lhMove(1)" aria-label="Siguiente" style="position:absolute;top:50%;right:12px;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:2px solid rgba(255,255,255,0.8);background:rgba(0,0,0,0.3);color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;backdrop-filter:blur(4px);">
         <i class="bi bi-chevron-right"></i>
       </button>
 
-      <!-- DOTS -->
-      <div id="lhDots" style="
-        position:absolute; bottom:12px; left:50%; transform:translateX(-50%);
-        display:flex; gap:8px; z-index:10;">
-        <button onclick="lhGoTo(0)" data-i="0" style="width:24px; height:8px; border-radius:4px; border:none; background:#fff; cursor:pointer; padding:0; opacity:1;"></button>
-        <button onclick="lhGoTo(1)" data-i="1" style="width:8px;  height:8px; border-radius:50%; border:none; background:rgba(255,255,255,0.5); cursor:pointer; padding:0;"></button>
-        <button onclick="lhGoTo(2)" data-i="2" style="width:8px;  height:8px; border-radius:50%; border:none; background:rgba(255,255,255,0.5); cursor:pointer; padding:0;"></button>
+      <!-- Dots -->
+      <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10;">
+        <span id="lhDot0" style="display:block;width:24px;height:8px;border-radius:4px;background:#fff;cursor:pointer;" onclick="lhGoTo(0)"></span>
+        <span id="lhDot1" style="display:block;width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;" onclick="lhGoTo(1)"></span>
+        <span id="lhDot2" style="display:block;width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;" onclick="lhGoTo(2)"></span>
       </div>
 
-    </div><!-- /carousel -->
-
+    </div>
   </div>
 </section>
 
 <script>
 (function(){
   var cur = 0, total = 3, timer;
-  var slides = document.getElementById('lhSlides');
-  var dots   = document.getElementById('lhDots').querySelectorAll('button');
+  var track = document.getElementById('lhTrack');
 
   function goTo(n) {
     cur = (n + total) % total;
-    slides.style.transform = 'translateX(-' + (cur * 100) + '%)';
-    dots.forEach(function(d, i) {
-      var active = i === cur;
-      d.style.width           = active ? '24px' : '8px';
-      d.style.borderRadius    = active ? '4px'  : '50%';
-      d.style.opacity         = active ? '1'    : '0.5';
-      d.style.background      = '#fff';
-    });
+    track.style.marginLeft = '-' + (cur * 100) + '%';
+    for (var i = 0; i < total; i++) {
+      var dot = document.getElementById('lhDot' + i);
+      if (i === cur) {
+        dot.style.width = '24px';
+        dot.style.borderRadius = '4px';
+        dot.style.background = '#fff';
+      } else {
+        dot.style.width = '8px';
+        dot.style.borderRadius = '50%';
+        dot.style.background = 'rgba(255,255,255,0.5)';
+      }
+    }
   }
 
-  window.lhMove = function(dir) { goTo(cur + dir); reset(); };
-  window.lhGoTo = function(n)   { goTo(n);         reset(); };
+  window.lhMove = function(d) { goTo(cur + d); reset(); };
+  window.lhGoTo = function(n) { goTo(n); reset(); };
 
   function start() { timer = setInterval(function(){ goTo(cur + 1); }, 5000); }
   function reset() { clearInterval(timer); start(); }
 
-  // Swipe
-  var sx = 0;
-  slides.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, {passive:true});
-  slides.addEventListener('touchend',   function(e){
-    var diff = sx - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) { lhMove(diff > 0 ? 1 : -1); }
-  });
-
-  // Pause on hover
   var box = document.getElementById('lhCarousel');
   box.addEventListener('mouseenter', function(){ clearInterval(timer); });
   box.addEventListener('mouseleave', start);
 
+  var sx = 0;
+  track.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, {passive:true});
+  track.addEventListener('touchend', function(e){
+    var diff = sx - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { lhMove(diff > 0 ? 1 : -1); }
+  });
+
   start();
 })();
 </script>
+
 
 
 
