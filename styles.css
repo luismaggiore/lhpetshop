@@ -1453,6 +1453,246 @@ body, p, a, li, input, button, label {
 }
 
 /* ==========================================================
+   HERO CAROUSEL — simple imagen
+   ========================================================== */
+.lh-hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.lh-hero__track {
+  display: flex;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.lh-hero__slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.lh-hero__slide picture,
+.lh-hero__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Flechas */
+.lh-hero__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: rgba(255,255,255,0.25);
+  border: 2px solid rgba(255,255,255,0.5);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  backdrop-filter: blur(4px);
+}
+.lh-hero__arrow:hover {
+  background: rgba(255,255,255,0.45);
+  transform: translateY(-50%) scale(1.08);
+}
+.lh-hero__arrow--prev { left: 16px; }
+.lh-hero__arrow--next { right: 16px; }
+
+/* Dots */
+.lh-hero__dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 20;
+}
+.lh-hero__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.45);
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+}
+.lh-hero__dot--active {
+  background: #fff;
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* ==========================================================
+   PROMO SHELF (Jumbo-style: banner + 4 productos)
+   ========================================================== */
+.promo-shelf {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.promo-shelf--reverse {
+  grid-template-columns: 1fr 260px;
+}
+
+.promo-shelf-banner {
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  min-height: 340px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.promo-shelf-banner-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-shelf-tag {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.promo-shelf-discount {
+  font-size: 72px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  margin: 8px 0;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.promo-shelf-subtitle {
+  color: rgba(255,255,255,0.85);
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.promo-shelf-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Responsive promo-shelf */
+@media (max-width: 1100px) {
+  .promo-shelf-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-shelf,
+  .promo-shelf--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-shelf--reverse .promo-shelf-products {
+    order: -1;
+  }
+
+  .promo-shelf-banner {
+    min-height: 200px;
+    padding: 24px;
+  }
+
+  .promo-shelf-discount {
+    font-size: 48px;
+  }
+
+  .promo-shelf-products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-shelf-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================
+   TOP PROMO BANNERS (2 columnas sobre el header)
+   ========================================================== */
+@media (max-width: 640px) {
+  .top-promo-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ==========================================================
+   TIPOGRAFÍA OFICIAL — Lineamiento Gráfico L&H
+   ========================================================== */
+
+/* Títulos principales — Montserrat (equivalente a Mont) */
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.hero-jumbo-content h1,
+.bento-main h2,
+.promo-shelf-discount {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Textos generales — Tex Gyre Adventor */
+body, p, a, li, input, button, label {
+  font-family: 'Tex Gyre Adventor', 'Montserrat', sans-serif;
+}
+
+/* Nav, precios, badges — Montserrat por legibilidad */
+.nav-item > a,
+.product-brand,
+.price-current,
+.badge,
+.btn,
+.promo-shelf-tag,
+.footer-col h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Logo wordmark — Atma */
+.logo,
+.logo img + span {
+  font-family: 'Atma', cursive;
+}
+
+/* Frases destacadas hero — Montserrat italic bold */
+.hero-jumbo-content h1 span,
+.promo-shelf-discount {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+}
+
+/* ==========================================================
    HERO CAROUSEL — L&H Petshop
    Desktop: ~1920×364px | Mobile: 700×350px
    Estructura: [Título col] [Foto col] [Detalle col + Ilustración flotante]
