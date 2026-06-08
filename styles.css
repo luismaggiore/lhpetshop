@@ -61,9 +61,11 @@ img {
 }
 
 .container {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 24px;
+  max-width: var(--container-max) !important;
+  margin: 0 auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  width: 100% !important;
 }
 
 .section-title {
@@ -2108,5 +2110,15 @@ body, p, a, li, input, button, label {
 @media (max-width: 768px) {
   .cat-arrow {
     display: flex;
+  }
+}
+
+/* Forzar padding lateral en mobile para header y container */
+@media (max-width: 575px) {
+  .container,
+  .container-sm,
+  .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 }
