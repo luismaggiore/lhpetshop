@@ -1451,3 +1451,273 @@ body, p, a, li, input, button, label {
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
 }
+
+/* ==========================================================
+   HERO CAROUSEL — L&H Petshop
+   Desktop: ~1920×364px | Mobile: 700×350px
+   Estructura: [Título col] [Foto col] [Detalle col + Ilustración flotante]
+   ========================================================== */
+
+.lh-hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 364px;
+  margin-bottom: 0;
+}
+
+/* Track — contiene todos los slides en fila */
+.lh-hero__track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Slide — ocupa 100% del viewport del hero */
+.lh-hero__slide {
+  display: grid;
+  grid-template-columns: 280px 1fr 340px;
+  min-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ── Zona 1: Título ────────────────────────────────────────── */
+.lh-hero__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 36px;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.lh-hero__tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  border-radius: 50px;
+  padding: 4px 12px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.lh-hero__heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* ── Zona 2: Foto ──────────────────────────────────────────── */
+.lh-hero__photo {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.lh-hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ── Zona 3: Detalle ───────────────────────────────────────── */
+.lh-hero__detail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 32px 36px 32px 80px; /* espacio izquierdo para la ilustración */
+  overflow: visible;
+  z-index: 1;
+}
+
+/* Ilustración flotante — se superpone entre foto y detalle */
+.lh-hero__illustration {
+  position: absolute;
+  left: -70px;       /* sobresale hacia la zona de foto */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  height: 110%;      /* más alta que el banner para efecto de desborde */
+  display: flex;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.lh-hero__illustration img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(-4px 0 12px rgba(0,0,0,0.15));
+}
+
+.lh-hero__detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: right;
+}
+
+.lh-hero__detail-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.lh-hero__detail-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.95;
+}
+
+.lh-hero__logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  align-self: flex-end;
+}
+
+/* ── Flechas ───────────────────────────────────────────────── */
+.lh-hero__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: rgba(255,255,255,0.25);
+  border: 2px solid rgba(255,255,255,0.5);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  backdrop-filter: blur(4px);
+}
+
+.lh-hero__arrow:hover {
+  background: rgba(255,255,255,0.45);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.lh-hero__arrow--prev { left: 16px; }
+.lh-hero__arrow--next { right: 16px; }
+
+/* ── Dots ──────────────────────────────────────────────────── */
+.lh-hero__dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 20;
+}
+
+.lh-hero__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.45);
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.lh-hero__dot--active {
+  background: #fff;
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* ── MOBILE (≤ 700px) ──────────────────────────────────────── */
+@media (max-width: 700px) {
+  .lh-hero {
+    height: 350px;
+  }
+
+  .lh-hero__slide {
+    /* Mobile: franja título arriba, foto y detalle abajo 50/50 */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 56px 1fr;
+  }
+
+  /* Título — franja delgada top, ocupa todo el ancho */
+  .lh-hero__title {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px;
+    gap: 10px;
+  }
+
+  .lh-hero__heading {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .lh-hero__tag {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+
+  /* Foto — mitad izquierda abajo */
+  .lh-hero__photo {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  /* Detalle — mitad derecha abajo */
+  .lh-hero__detail {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 16px 16px 16px 40px;
+    justify-content: center;
+  }
+
+  /* Ilustración en mobile — más pequeña, pegada al borde izq del detalle */
+  .lh-hero__illustration {
+    left: -40px;
+    height: 90%;
+  }
+
+  .lh-hero__detail-text {
+    font-size: 16px;
+  }
+
+  .lh-hero__detail-sub {
+    font-size: 12px;
+  }
+
+  .lh-hero__logo {
+    height: 28px;
+  }
+
+  .lh-hero__arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
