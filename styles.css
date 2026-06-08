@@ -1421,17 +1421,18 @@ img {
 }
 
 @media (max-width: 768px) {
-  /* Shelf: columna única */
+  /* Shelf: columna única con flex para que order funcione */
   .promo-shelf,
   .promo-shelf--reverse {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 12px;
   }
 
-  /* Reverse: productos primero, banner abajo */
-  .promo-shelf--reverse .promo-shelf-products {
-    order: -1;
-  }
+  /* Banner siempre arriba en mobile */
+  .promo-shelf-banner        { order: 1; }
+  .promo-shelf-products      { order: 2; }
+  .view-all--mobile          { order: 3; }
 
   /* Banner mobile: franja simple ancho completo */
   .promo-shelf-banner {
