@@ -55,6 +55,43 @@ ul {
   list-style: none;
 }
 
+/* ==========================================================
+   CAROUSEL DOTS EXTERNOS (estilo Jumbo)
+   ========================================================== */
+.lh-carousel-wrapper {
+  position: relative;
+}
+
+.lh-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 0 4px;
+}
+
+.lh-dot {
+  width: 28px;
+  height: 6px;
+  border-radius: 3px;
+  background: #d0d0d0;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.25s, width 0.25s;
+}
+
+.lh-dot.active {
+  background: var(--color-primary);
+  width: 36px;
+}
+
+/* En desktop: ocultar los dots externos (los internos del bootstrap se ven bien) */
+@media (min-width: 701px) {
+  .lh-carousel-dots {
+    display: none;
+  }
+}
+
 img {
   max-width: 100%;
   display: block;
