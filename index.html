@@ -291,8 +291,29 @@
       </div>
     </section>
 
-    <!-- BANNERS 2 COLUMNAS -->
+    <!-- BANNERS IMÁGENES: 2 COLUMNAS + HORIZONTAL -->
     <section style="padding: 0; margin: 12px 0 8px 0;">
+      <div class="container">
+        <!-- Fila de 2 columnas -->
+        <div class="top-promo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+          <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md); border: 1px solid var(--color-primary); box-sizing: border-box;">
+            <img src="assets/bnr-col-1.webp" alt="Promo 1" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+          </a>
+          <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md); border: 1px solid var(--color-primary); box-sizing: border-box;">
+            <img src="assets/bnr-col-2.webp" alt="Promo 2" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+          </a>
+        </div>
+        <!-- Fila horizontal -->
+        <div>
+          <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md); border: 1px solid var(--color-primary); box-sizing: border-box;">
+            <img src="assets/bnr-horizontal.webp" alt="Promo Horizontal" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNERS 2 COLUMNAS -->
+    <section style="display: none; padding: 0; margin: 12px 0 8px 0;">
       <div class="container">
         <div class="top-promo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
 
@@ -327,7 +348,7 @@
     </section>
 
     <!-- BANNER ANCHO: DESPACHO GRATIS + MARCAS -->
-    <section class="promo-banner-section" style="padding: 0; margin: 0 0 12px 0;">
+    <section class="promo-banner-section" style="display: none; padding: 0; margin: 0 0 12px 0;">
       <div class="container">
         <div style="
           background: linear-gradient(135deg, #134f63 0%, #5ec7cd 100%);
@@ -362,7 +383,7 @@
     </section>
 
     <!-- OFERTAS DE LA SEMANA -->
-    <section class="promo-shelf-section" style="background-color: #fff8f8; padding: 16px 0;">
+    <section class="promo-shelf-section mt-4" style="background-color: #fff8f8; padding: 16px 0;">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" style="font-family: 'Montserrat', sans-serif; color: #ef4748;">🏷️ Ofertas de la semana</h2>
@@ -584,10 +605,10 @@
     </section>
 
     <!-- BRANDS -->
-    <section class="brands-section" style="overflow: hidden; padding: 16px 0;">
+    <section class="brands-section py-5" style="overflow: hidden; padding: 16px 0;">
       <div class="container">
         <div class="section-header" style="border: none; text-align: center; justify-content: center;">
-          <h2 class="section-title" style="font-family: 'Montserrat', sans-serif;">Marcas destacadas</h2>
+          <h2 class="section-title mb-4" style="font-family: 'Montserrat', sans-serif;">Marcas destacadas</h2>
         </div>
       </div>
       <div class="brands-marquee-wrapper">
@@ -644,16 +665,6 @@
       </div>
     </section>
 
-<!-- BANNER HORIZONTAL -->
-<section class="banner-section py-4">
-  <div class="container">
-    <a href="#"
-      style="display: block; overflow: hidden; border-radius: var(--radius-md); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-      <img src="assets/banner-pet.webp" alt="Promoción"
-        style="width: 100%; height: auto; display: block; object-fit: cover;" />
-    </a>
-  </div>
-</section>
 
     <!-- NEWSLETTER -->
     <section class="newsletter-section" style="background: #134f63; padding: 80px 0; text-align: center; position: relative; overflow: hidden;">
