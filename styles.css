@@ -247,14 +247,16 @@ img {
    HEADER NAV (MEGA MENU)
    ========================================================== */
 .header-nav {
-  background: #134f63;
-  border-top: 1px solid rgba(255,255,255,0.15);
+  background: #d8efed;
+  border-bottom: 1px solid #badbd9;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   gap: 32px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
@@ -265,15 +267,15 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #fff;
-  font-weight: 600;
+  color: #134f63;
+  font-weight: 700;
   font-size: 14px;
   padding: 16px 0;
   transition: color 0.2s;
 }
 
 .nav-item > a:hover {
-  color: #dae351;
+  color: #ef4748;
 }
 
 .dropdown-menu {
