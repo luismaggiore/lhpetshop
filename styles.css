@@ -770,7 +770,7 @@ img {
 }
 
 .product-card {
-  background: linear-gradient(-45deg, #ffffff 0%, #f5f8f9 90%,
+  background: linear-gradient(-45deg,#f1f4f5 0%, #ffffff 40%,#ffffff 70%, #f5f8f9 90%,
     #f1f4f5 100%);
   border: none;
   border-radius: var(--radius-md);
@@ -788,7 +788,7 @@ img {
   inset: 0;
   border-radius: var(--radius-md);
   padding: 2px;
-  background: linear-gradient(160deg, rgba(255,255,255,0.9) 0%, rgba(217, 224, 228, 0.2) 50%, rgba(183, 196, 201, 0) 100%);
+  background: linear-gradient(160deg, rgba(255,255,255,0.9) 0%, rgba(217, 224, 228, 0) 50%, rgb(255, 255, 255) 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -2340,9 +2340,10 @@ body, p, a, li, input, button, label {
   position: relative;
   overflow: hidden;
   margin-bottom: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 0px 5px rgba(0,0,0,0.1);
   background-color: #f8f9fa;
   box-sizing: border-box;
+    border: white 1px solid;
 }
 .circle-cat-card__img img {
   position: absolute;
