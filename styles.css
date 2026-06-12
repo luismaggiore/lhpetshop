@@ -773,7 +773,7 @@ img {
 
 .product-card {
   background: radial-gradient(ellipse at 50% 0%, #ffffff 0%, #f5f8f9 100%);
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.03);
   border-radius: var(--radius-md);
   padding: 12px;
   position: relative;
