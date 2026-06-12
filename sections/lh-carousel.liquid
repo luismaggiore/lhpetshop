@@ -1,0 +1,233 @@
+{% comment %}
+  ============================================================
+  Section: lh-carousel.liquid
+  Carousel principal LH Petshop
+  - Cada slide tiene imagen desktop + imagen mobile configurables
+  - Máximo ilimitado de slides (ajustable con max_blocks)
+  - Dots externos en mobile, flechas en desktop
+  ============================================================
+{% endcomment %}
+
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .lh-carousel-wrapper {
+    position: relative;
+    padding-bottom: 16px;
+  }
+
+  .lh-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 0 4px;
+  }
+
+  .lh-dot {
+    width: 28px;
+    height: 6px;
+    border-radius: 3px;
+    background: #d0d0d0;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.25s, width 0.25s;
+  }
+
+  .lh-dot.active {
+    background: #134f63;
+    width: 36px;
+  }
+
+  /* Dots solo en mobile */
+  @media (min-width: 701px) {
+    .lh-carousel-dots {
+      display: none;
+    }
+  }
+
+  /* Flechas */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 44px;
+    opacity: 1;
+  }
+
+  @media (max-width: 700px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none;
+    }
+  }
+
+  .carousel-control-prev { left: 0; }
+  .carousel-control-next { right: 0; }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.7);
+    background-size: 55%;
+    backdrop-filter: blur(4px);
+  }
+
+  .lh-carousel-wrapper img {
+    max-width: 100%;
+    display: block;
+    width: 100%;
+  }
+</style>
+
+<div class="container lh-carousel-wrapper pt-3">
+  <div id="lhCarousel"
+       class="carousel slide"
+       data-bs-ride="carousel"
+       data-bs-interval="{{ section.settings.autoplay_speed | times: 1000 }}"
+       style="border-radius:16px; overflow:hidden;">
+
+    <div class="carousel-inner">
+      {% for block in section.blocks %}
+        {% assign is_first = forloop.first %}
+        <div class="carousel-item {% if is_first %}active{% endif %}"
+             {{ block.shopify_attributes }}>
+          <picture>
+            {% if block.settings.image_mobile != blank %}
+              <source
+                media="(max-width:700px)"
+                srcset="{{ block.settings.image_mobile | image_url: width: 700 }}">
+            {% endif %}
+            {% if block.settings.image_desktop != blank %}
+              <img
+                src="{{ block.settings.image_desktop | image_url: width: 1920 }}"
+                class="d-block w-100"
+                alt="{{ block.settings.alt_text | escape }}"
+                loading="{% if is_first %}eager{% else %}lazy{% endif %}">
+            {% else %}
+              <div style="width:100%; height:300px; background:#e0e0e0; display:flex; align-items:center; justify-content:center; color:#888;">
+                Sin imagen — agrega una en el customizer
+              </div>
+            {% endif %}
+          </picture>
+
+          {% if block.settings.link != blank %}
+            <a href="{{ block.settings.link }}"
+               class="stretched-link"
+               aria-label="{{ block.settings.alt_text | escape }}"></a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <button class="carousel-control-prev" type="button"
+            data-bs-target="#lhCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button"
+            data-bs-target="#lhCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
+  </div>
+
+  <!-- Dots externos (mobile) — generados dinámicamente por JS -->
+  <div class="lh-carousel-dots" id="lhCarouselDots"></div>
+</div>
+
+<script>
+(function() {
+  const carousel = document.getElementById('lhCarousel');
+  const dotsContainer = document.getElementById('lhCarouselDots');
+  if (!carousel || !dotsContainer) return;
+
+  const slides = carousel.querySelectorAll('.carousel-item');
+  const totalSlides = slides.length;
+
+  // Generar dots dinámicamente según cantidad de slides
+  slides.forEach(function(_, i) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'lh-dot' + (i === 0 ? ' active' : '');
+    btn.setAttribute('aria-label', 'Ir al slide ' + (i + 1));
+    btn.addEventListener('click', function() {
+      const instance = typeof bootstrap !== 'undefined'
+        ? bootstrap.Carousel.getInstance(carousel)
+        : null;
+      if (instance) instance.to(i);
+    });
+    dotsContainer.appendChild(btn);
+  });
+
+  const dots = dotsContainer.querySelectorAll('.lh-dot');
+
+  // Sincronizar dot activo cuando cambia el slide
+  carousel.addEventListener('slid.bs.carousel', function(e) {
+    dots.forEach(function(d) { d.classList.remove('active'); });
+    if (dots[e.to]) dots[e.to].classList.add('active');
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Carousel principal",
+  "tag": "section",
+  "class": "lh-section-carousel",
+  "settings": [
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Velocidad autoplay (segundos)",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "default": 5
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_desktop",
+          "label": "Imagen desktop",
+          "info": "Recomendado: 1920×364 px"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Imagen mobile",
+          "info": "Recomendado: 700×350 px"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Texto alternativo (SEO)",
+          "default": "Banner promocional"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Enlace del banner (opcional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carousel principal",
+      "blocks": [
+        { "type": "slide" },
+        { "type": "slide" },
+        { "type": "slide" }
+      ]
+    }
+  ]
+}
+{% endschema %}
