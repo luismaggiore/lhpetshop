@@ -1112,8 +1112,9 @@ img {
     left: 0;
     width: 100%;
     z-index: 500;
+    background: #134f63;
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    padding: 0 8px;
+    padding: 0;
   }
 
   .header-nav.open {
@@ -1123,7 +1124,7 @@ img {
   .nav-list {
     flex-direction: column;
     gap: 0;
-    padding: 0;
+    padding: 8px 0;
     width: 100%;
   }
 
@@ -1170,7 +1171,7 @@ img {
   }
 
   .dropdown-menu {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.35);
     padding: 4px 0 12px 0;
   }
 
@@ -1185,7 +1186,7 @@ img {
   }
 
   .mega-column h4 {
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.7);
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1202,18 +1203,18 @@ img {
 
   .dropdown-menu ul li a {
     display: block;
-    color: rgba(255,255,255,0.9);
+    color: #fff;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 9px 20px 9px 28px;
     border-bottom: none;
     transition: background 0.15s, color 0.15s;
   }
 
   .dropdown-menu ul li a:hover {
-    background: rgba(255,255,255,0.08);
-    color: #fff;
-    font-weight: 500;
+    background: rgba(255,255,255,0.12);
+    color: #dae351;
+    font-weight: 600;
   }
 
   .hero-jumbo {
