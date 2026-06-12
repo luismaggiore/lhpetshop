@@ -542,7 +542,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid #5ec7cd;
 }
 
 .bento-side-2 .tag {
@@ -774,11 +773,11 @@ img {
 
 .product-card {
   background: #fff;
-  border: 1px solid var(--color-primary);
+  border: none;
   border-radius: var(--radius-md);
   padding: 12px;
   position: relative;
-  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
   display: flex;
   flex-direction: column;
 }
@@ -786,7 +785,6 @@ img {
 .product-card:hover {
   box-shadow: 0 8px 28px rgba(19, 79, 99, 0.2);
   transform: translateY(-4px);
-  border-color: var(--color-primary);
 }
 
 .badge {
@@ -2019,10 +2017,9 @@ body, p, a, li, input, button, label {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 12px;
-  border: 1px solid #134f63;
   overflow: hidden;
   background: #f4fafa;
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .cat-card__img img {
@@ -2034,7 +2031,6 @@ body, p, a, li, input, button, label {
 }
 
 .cat-card:hover .cat-card__img {
-  border-color: #dae351;
   box-shadow: 0 6px 20px rgba(19,79,99,0.18);
   transform: translateY(-3px);
 }
@@ -2213,10 +2209,9 @@ body, p, a, li, input, button, label {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 12px;
-  border: 1px solid #134f63;
   overflow: hidden;
   background: #f4fafa;
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .cat-card__img img {
@@ -2228,7 +2223,6 @@ body, p, a, li, input, button, label {
 }
 
 .cat-card:hover .cat-card__img {
-  border-color: #dae351;
   box-shadow: 0 6px 20px rgba(19,79,99,0.18);
   transform: translateY(-3px);
 }
@@ -2335,7 +2329,6 @@ body, p, a, li, input, button, label {
   margin-bottom: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   background-color: #f8f9fa;
-  border: 1px solid var(--color-primary);
   box-sizing: border-box;
 }
 .circle-cat-card__img img {
@@ -2394,5 +2387,4 @@ body, p, a, li, input, button, label {
 
 /* CAROUSEL BORDER */
 #lhCarousel {
-  border: 1px solid var(--color-primary);
 }
