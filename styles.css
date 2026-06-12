@@ -1073,7 +1073,7 @@ img {
   .header-main {
     flex-wrap: wrap;
     height: auto;
-    padding: 20px 16px;
+    padding: 20px 16px !important;
     gap: 12px;
   }
 
