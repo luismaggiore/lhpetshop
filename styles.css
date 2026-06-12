@@ -40,7 +40,7 @@
 body {
   font-family: 'Tex Gyre Adventor', 'Montserrat', sans-serif;
   color: var(--color-text-main);
-  background-color: var(--color-bg-body);
+  background-color: rgb(250, 250, 250);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -402,13 +402,11 @@ img {
   border: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(19,79,99,0.35);
 }
 
 .btn:hover {
-  background: #134f63;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(19,79,99,0.45);
+  background: #ffffff;
+    color: var(--color-primary);
 }
 
 .btn-light {
@@ -772,15 +770,16 @@ img {
 }
 
 .product-card {
-  background: radial-gradient(ellipse at 50% 0%, #ffffff 0%, #f5f8f9 100%);
+  background: linear-gradient(-45deg, #ffffff 0%, #f5f8f9 90%,
+    #f1f4f5 100%);
   border: none;
   border-radius: var(--radius-md);
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
   padding: 12px;
   position: relative;
   transition: transform 0.25s;
   display: flex;
   flex-direction: column;
-  box-shadow: none;
 }
 
 .product-card::before {
@@ -788,18 +787,15 @@ img {
   position: absolute;
   inset: 0;
   border-radius: var(--radius-md);
-  padding: 1px;
-  background: linear-gradient(160deg, rgba(255,255,255,0.9) 0%, rgba(180,196,204,0.4) 50%, rgba(140,165,175,0.25) 100%);
+  padding: 2px;
+  background: linear-gradient(160deg, rgba(255,255,255,0.9) 0%, rgba(217, 224, 228, 0.2) 50%, rgba(183, 196, 201, 0) 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
 }
 
-.product-card:hover {
-  box-shadow: none;
-  transform: translateY(-4px);
-}
+
 
 .badge {
   position: absolute;
@@ -876,11 +872,13 @@ img {
   background: #134f63;
   color: #fff;
   border: none;
+    border: 1px solid #134f63;
 }
 
 .product-card .btn:hover {
-  background: #134f63;
-  color: #fff;
+  background: #ffffff;
+  color: var(--color-primary);
+  border: 1px solid #134f63;
 }
 
 /* ==========================================================
@@ -888,7 +886,7 @@ img {
    ========================================================== */
 .brands-section {
   padding: 48px 0;
-  
+  background-color: white;
   overflow: hidden;
 }
 
@@ -2318,7 +2316,7 @@ body, p, a, li, input, button, label {
 
 /* CIRCULAR CATEGORIES */
 .circle-categories-section {
-  background-color: #fff;
+  background-color: rgb(250, 250, 250);
 }
 .circle-cat-row {
   display: flex;
