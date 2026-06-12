@@ -818,6 +818,7 @@ img {
 .product-image img {
   max-height: 100%;
   object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .product-brand {
