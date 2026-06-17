@@ -2402,3 +2402,16 @@ body, p, a, li, input, button, label {
 /* CAROUSEL BORDER */
 #lhCarousel {
 }
+
+
+/* === SEO: H1 de la portada === */
+.lh-h1{
+  font-family:'Montserrat',sans-serif;
+  font-size:20px;
+  font-weight:700;
+  color:#1f2937;
+  text-align:center;
+  line-height:1.3;
+  margin:26px auto 0;
+}
+@media (max-width:700px){ .lh-h1{ font-size:16px; margin-top:18px; } }
