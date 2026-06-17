@@ -9,6 +9,8 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.lhpetshop.cl/" />
     <link rel="icon" href="https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png" />
+    <link rel="apple-touch-icon" href="https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png" />
+    <meta name="theme-color" content="#134f63" />
 
     <!-- Open Graph (vista al compartir) -->
     <meta property="og:type" content="website" />
@@ -46,6 +48,31 @@
         "addressRegion": "Region Metropolitana"
       },
       "areaServed": "CL"
+    }
+    </script>
+    <!-- Datos estructurados: sitio web (caja de busqueda) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "L&H Pet Shop",
+      "url": "https://www.lhpetshop.cl",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://www.lhpetshop.cl/search?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Datos estructurados: organizacion -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "L&H Pet Shop",
+      "url": "https://www.lhpetshop.cl",
+      "logo": "https://dojiw2m9tvv09.cloudfront.net/75790/1/logopetsh9318.png"
     }
     </script>
   </head>
@@ -203,20 +230,20 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <picture>
-          <source media="(max-width:700px)" srcset="banners/banner-01mobile.png">
-          <img src="banners/banner-01.png" class="d-block w-100" alt="Especial Gatos">
+          <source media="(max-width:700px)" srcset="assets/banner-01mobile.webp">
+          <img src="assets/banner-01.webp" class="d-block w-100" width="1920" height="364" fetchpriority="high" alt="Especial Gatos">
         </picture>
       </div>
       <div class="carousel-item">
         <picture>
-          <source media="(max-width:700px)" srcset="banners/banner-02mobile.png">
-          <img src="banners/banner-02.png" class="d-block w-100" alt="Ofertas Semanales">
+          <source media="(max-width:700px)" srcset="assets/banner-02mobile.webp">
+          <img src="assets/banner-02.webp" class="d-block w-100" width="1920" height="364" fetchpriority="high" alt="Ofertas Semanales">
         </picture>
       </div>
       <div class="carousel-item">
         <picture>
-          <source media="(max-width:700px)" srcset="banners/banner-03mobile.png">
-          <img src="banners/banner-03.png" class="d-block w-100" alt="Especial Perros">
+          <source media="(max-width:700px)" srcset="assets/banner-03mobile.webp">
+          <img src="assets/banner-03.webp" class="d-block w-100" width="1920" height="364" fetchpriority="high" alt="Especial Perros">
         </picture>
       </div>
     </div>
@@ -251,36 +278,36 @@
         <div class="circle-cat-row">
           <a href="#" class="circle-cat-card">
             <div class="circle-cat-card__img">
-              <img src="img-categories/cat-01.png" class="img-normal" alt="Comida Gato" />
-              <img src="img-categories/cat-02.png" class="img-hover" alt="Comida Gato" />
+              <img loading="lazy" decoding="async" src="img-categories/cat-01.png" class="img-normal" alt="Comida Gato" />
+              <img loading="lazy" decoding="async" src="img-categories/cat-02.png" class="img-hover" alt="Comida Gato" />
             </div>
             <span class="circle-cat-card__label">Comida Gato</span>
           </a>
           <a href="#" class="circle-cat-card">
             <div class="circle-cat-card__img">
-              <img src="img-categories/dog-01.png" class="img-normal" alt="Comida Perro" />
-              <img src="img-categories/dog-02.png" class="img-hover" alt="Comida Perro" />
+              <img loading="lazy" decoding="async" src="img-categories/dog-01.png" class="img-normal" alt="Comida Perro" />
+              <img loading="lazy" decoding="async" src="img-categories/dog-02.png" class="img-hover" alt="Comida Perro" />
             </div>
             <span class="circle-cat-card__label">Comida Perro</span>
           </a>
           <a href="#" class="circle-cat-card">
             <div class="circle-cat-card__img">
-              <img src="img-categories/toys-01.png" class="img-normal" alt="Accesorios y Juegos" />
-              <img src="img-categories/toys-02.png" class="img-hover" alt="Accesorios y Juegos" />
+              <img loading="lazy" decoding="async" src="img-categories/toys-01.png" class="img-normal" alt="Accesorios y Juegos" />
+              <img loading="lazy" decoding="async" src="img-categories/toys-02.png" class="img-hover" alt="Accesorios y Juegos" />
             </div>
             <span class="circle-cat-card__label">Accesorios y Juegos</span>
           </a>
           <a href="#" class="circle-cat-card">
             <div class="circle-cat-card__img">
-              <img src="img-categories/hihgiene-01.png" class="img-normal" alt="Higiene" />
-              <img src="img-categories/higiene-02.png" class="img-hover" alt="Higiene" />
+              <img loading="lazy" decoding="async" src="img-categories/hihgiene-01.png" class="img-normal" alt="Higiene" />
+              <img loading="lazy" decoding="async" src="img-categories/higiene-02.png" class="img-hover" alt="Higiene" />
             </div>
             <span class="circle-cat-card__label">Higiene</span>
           </a>
           <a href="#" class="circle-cat-card">
             <div class="circle-cat-card__img">
-              <img src="img-categories/exotic-01.png" class="img-normal" alt="Exóticos" />
-              <img src="img-categories/exotic-02.png" class="img-hover" alt="Exóticos" />
+              <img loading="lazy" decoding="async" src="img-categories/exotic-01.png" class="img-normal" alt="Exóticos" />
+              <img loading="lazy" decoding="async" src="img-categories/exotic-02.png" class="img-hover" alt="Exóticos" />
             </div>
             <span class="circle-cat-card__label">Exóticos</span>
           </a>
@@ -300,14 +327,14 @@
         <div class="products-grid">
           <div class="product-card">
             <div class="badge">-15%</div>
-            <div class="product-image"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg" alt="Josera Kitten" /></div>
+            <div class="product-image"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg" alt="Josera Kitten" /></div>
             <div class="product-brand">Josera</div>
             <div class="product-title">Josera Kitten 2 Kilos Libre De Granos</div>
             <div class="product-price"><span class="price-current">$17.990</span><span class="price-old">$21.100</span></div>
             <button class="btn">Agregar al carro</button>
           </div>
           <div class="product-card">
-            <div class="product-image"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg" alt="Royal Canin" /></div>
+            <div class="product-image"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg" alt="Royal Canin" /></div>
             <div class="product-brand">Royal Canin</div>
             <div class="product-title">Royal Canin Urinary Care 1.5kg</div>
             <div class="product-price"><span class="price-current">$15.770</span></div>
@@ -315,7 +342,7 @@
           </div>
           <div class="product-card">
             <div class="badge">-10%</div>
-            <div class="product-image"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg" alt="Arena Fit" /></div>
+            <div class="product-image"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg" alt="Arena Fit" /></div>
             <div class="product-brand">Fit Formula</div>
             <div class="product-title">Arena Fit Lavanda 10 KG Aglutinante</div>
             <div class="product-price"><span class="price-current">$9.990</span><span class="price-old">$11.100</span></div>
@@ -323,7 +350,7 @@
           </div>
           <div class="product-card">
             <div class="badge badge-new">Nuevo</div>
-            <div class="product-image"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Pro Plan" /></div>
+            <div class="product-image"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Pro Plan" /></div>
             <div class="product-brand">Pro Plan</div>
             <div class="product-title">Pro Plan Adult Chicken & Rice 7.5kg</div>
             <div class="product-price"><span class="price-current">$42.990</span></div>
@@ -339,16 +366,16 @@
         <!-- Fila de 2 columnas -->
         <div class="top-promo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
           <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md);">
-            <img src="assets/bnr-col-1.webp" alt="Promo 1" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+            <img loading="lazy" decoding="async" src="assets/bnr-col-1.webp" alt="Promo 1" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
           </a>
           <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md);">
-            <img src="assets/bnr-col-2.webp" alt="Promo 2" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+            <img loading="lazy" decoding="async" src="assets/bnr-col-2.webp" alt="Promo 2" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
           </a>
         </div>
         <!-- Fila horizontal -->
         <div>
           <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md);">
-            <img src="assets/bnr-horizontal.webp" alt="Promo Horizontal" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+            <img loading="lazy" decoding="async" src="assets/bnr-horizontal.webp" alt="Promo Horizontal" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
           </a>
         </div>
       </div>
@@ -447,7 +474,7 @@
             <div class="product-card">
               <div class="badge">-15%</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg" alt="Josera Kitten" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg" alt="Josera Kitten" />
               </div>
               <div class="product-brand">Josera</div>
               <div class="product-title">Josera Kitten 2 Kilos Libre De Granos</div>
@@ -460,7 +487,7 @@
             <div class="product-card">
               <div class="badge">-5%</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg" alt="Royal Canin" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg" alt="Royal Canin" />
               </div>
               <div class="product-brand">Royal Canin</div>
               <div class="product-title">Royal Canin Urinary Care 1.5kg</div>
@@ -473,7 +500,7 @@
             <div class="product-card">
               <div class="badge">-10%</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg" alt="Arena Fit" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg" alt="Arena Fit" />
               </div>
               <div class="product-brand">Fit Formula</div>
               <div class="product-title">Arena Fit Lavanda 10 KG Aglutinante</div>
@@ -486,7 +513,7 @@
             <div class="product-card">
               <div class="badge">-25%</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Pro Plan" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Pro Plan" />
               </div>
               <div class="product-brand">Pro Plan</div>
               <div class="product-title">Pro Plan Optihealth Carne En Salsa 100g</div>
@@ -523,7 +550,7 @@
             <div class="product-card">
               <div class="badge badge-new">Nuevo</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Pro Plan Perro" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Pro Plan Perro" />
               </div>
               <div class="product-brand">Pro Plan</div>
               <div class="product-title">Pro Plan Adult Chicken & Rice 7.5kg</div>
@@ -535,7 +562,7 @@
             <div class="product-card">
               <div class="badge">-12%</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg" alt="Josera Perro" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg" alt="Josera Perro" />
               </div>
               <div class="product-brand">Josera</div>
               <div class="product-title">Josera Adult Sensitive Plus 15kg Grain Free</div>
@@ -547,7 +574,7 @@
             </div>
             <div class="product-card">
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg" alt="Royal Canin Perro" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg" alt="Royal Canin Perro" />
               </div>
               <div class="product-brand">Royal Canin</div>
               <div class="product-title">Royal Canin Medium Adult 15kg</div>
@@ -559,7 +586,7 @@
             <div class="product-card">
               <div class="badge">-8%</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Hills Perro" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Hills Perro" />
               </div>
               <div class="product-brand">Hill's</div>
               <div class="product-title">Hill's Science Diet Adult Large Breed 12kg</div>
@@ -587,7 +614,7 @@
             <div class="product-card">
               <div class="badge badge-new">Nuevo</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg" alt="Royal Canin Gato" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/x-royalcaninurinarycare66957547.jpg" alt="Royal Canin Gato" />
               </div>
               <div class="product-brand">Royal Canin</div>
               <div class="product-title">Royal Canin Indoor Adult 1.5kg</div>
@@ -599,7 +626,7 @@
             <div class="product-card">
               <div class="badge">-10%</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg" alt="Josera Gato" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/josera-novapet59823486.jpg" alt="Josera Gato" />
               </div>
               <div class="product-brand">Josera</div>
               <div class="product-title">Josera Kitten 2kg Grain Free L&H</div>
@@ -611,7 +638,7 @@
             </div>
             <div class="product-card">
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg" alt="Arena" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/1577-2022-04-20-19-25-215576.jpg" alt="Arena" />
               </div>
               <div class="product-brand">Fit Formula</div>
               <div class="product-title">Arena Fit Lavanda 10kg Aglutinante</div>
@@ -623,7 +650,7 @@
             <div class="product-card">
               <div class="badge">-20%</div>
               <div class="product-image">
-                <img src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Pro Plan Gato" />
+                <img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/product/d-q-np-774077-mla51164654630-082022-o2326.jpeg" alt="Pro Plan Gato" />
               </div>
               <div class="product-brand">Pro Plan</div>
               <div class="product-title">Pro Plan Optihealth Gato Adulto Salmón 3kg</div>
@@ -656,53 +683,53 @@
       <div class="brands-marquee-wrapper">
         <div class="brands-marquee-track">
           <!-- Original set -->
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/agility9511.png" alt="Agility" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bravery8271.png" alt="Bravery" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/proplan4841.png" alt="Pro Plan" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/josera1998.png" alt="Josera" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/fit-formula5390.png" alt="Fit Formula" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/criadores2825.png" alt="Criadores" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/belcando1961.png" alt="Belcando" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/hills-transforminglives-logo-cmyk-2019-espanol-blanco8097.png" alt="Hill's" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/naturalistic9065.png" alt="Naturalistic" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/cooking7919.jpg" alt="Cooking" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/brit5989.png" alt="Brit Care" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bill-jac3282.png" alt="Bil-Jac" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/n-d0868.png" alt="N&D" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/vetlife8336.png" alt="Vet Life" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/pure-life6114.png" alt="Pure Life" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/dog-evolution8630.png" alt="Dog Evolution" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/prestige3263.png" alt="Prestige" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/nomade3188.png" alt="Nomade" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/taste-of-wild0161.png" alt="Taste of the Wild" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/acana8748.jpg" alt="Acana" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/purina5521.png" alt="Purina" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/monge0437.png" alt="Monge" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/royal-canin1400.png" alt="Royal Canin" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/agility9511.png" alt="Agility" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bravery8271.png" alt="Bravery" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/proplan4841.png" alt="Pro Plan" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/josera1998.png" alt="Josera" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/fit-formula5390.png" alt="Fit Formula" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/criadores2825.png" alt="Criadores" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/belcando1961.png" alt="Belcando" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/hills-transforminglives-logo-cmyk-2019-espanol-blanco8097.png" alt="Hill's" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/naturalistic9065.png" alt="Naturalistic" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/cooking7919.jpg" alt="Cooking" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/brit5989.png" alt="Brit Care" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bill-jac3282.png" alt="Bil-Jac" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/n-d0868.png" alt="N&D" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/vetlife8336.png" alt="Vet Life" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/pure-life6114.png" alt="Pure Life" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/dog-evolution8630.png" alt="Dog Evolution" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/prestige3263.png" alt="Prestige" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/nomade3188.png" alt="Nomade" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/taste-of-wild0161.png" alt="Taste of the Wild" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/acana8748.jpg" alt="Acana" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/purina5521.png" alt="Purina" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/monge0437.png" alt="Monge" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/royal-canin1400.png" alt="Royal Canin" /></div>
           <!-- Duplicado para loop infinito -->
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/agility9511.png" alt="Agility" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bravery8271.png" alt="Bravery" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/proplan4841.png" alt="Pro Plan" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/josera1998.png" alt="Josera" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/fit-formula5390.png" alt="Fit Formula" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/criadores2825.png" alt="Criadores" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/belcando1961.png" alt="Belcando" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/hills-transforminglives-logo-cmyk-2019-espanol-blanco8097.png" alt="Hill's" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/naturalistic9065.png" alt="Naturalistic" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/cooking7919.jpg" alt="Cooking" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/brit5989.png" alt="Brit Care" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bill-jac3282.png" alt="Bil-Jac" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/n-d0868.png" alt="N&D" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/vetlife8336.png" alt="Vet Life" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/pure-life6114.png" alt="Pure Life" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/dog-evolution8630.png" alt="Dog Evolution" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/prestige3263.png" alt="Prestige" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/nomade3188.png" alt="Nomade" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/taste-of-wild0161.png" alt="Taste of the Wild" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/acana8748.jpg" alt="Acana" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/purina5521.png" alt="Purina" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/monge0437.png" alt="Monge" /></div>
-          <div class="brand-logo-item"><img src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/royal-canin1400.png" alt="Royal Canin" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/agility9511.png" alt="Agility" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bravery8271.png" alt="Bravery" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/proplan4841.png" alt="Pro Plan" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/josera1998.png" alt="Josera" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/fit-formula5390.png" alt="Fit Formula" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/criadores2825.png" alt="Criadores" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/belcando1961.png" alt="Belcando" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/hills-transforminglives-logo-cmyk-2019-espanol-blanco8097.png" alt="Hill's" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/naturalistic9065.png" alt="Naturalistic" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/cooking7919.jpg" alt="Cooking" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/brit5989.png" alt="Brit Care" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/bill-jac3282.png" alt="Bil-Jac" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/n-d0868.png" alt="N&D" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/vetlife8336.png" alt="Vet Life" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/pure-life6114.png" alt="Pure Life" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/dog-evolution8630.png" alt="Dog Evolution" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/prestige3263.png" alt="Prestige" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/nomade3188.png" alt="Nomade" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/taste-of-wild0161.png" alt="Taste of the Wild" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/acana8748.jpg" alt="Acana" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/purina5521.png" alt="Purina" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/monge0437.png" alt="Monge" /></div>
+          <div class="brand-logo-item"><img loading="lazy" decoding="async" src="https://dojiw2m9tvv09.cloudfront.net/75790/brand/royal-canin1400.png" alt="Royal Canin" /></div>
         </div>
       </div>
     </section>
