@@ -308,7 +308,7 @@ img {
   min-width: 600px;
 }
 
-.mega-column h4 {
+.mega-column .mega-col-title {
   color: var(--color-primary);
   font-size: 15px;
   margin-bottom: 16px;
@@ -946,7 +946,7 @@ img {
   margin-bottom: 48px;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 16px;
@@ -1195,7 +1195,7 @@ img {
     padding: 0;
   }
 
-  .mega-column h4 {
+  .mega-column .mega-col-title {
     color: rgba(255,255,255,0.55);
     font-size: 11px;
     font-weight: 700;
@@ -1591,7 +1591,7 @@ body, p, a, li, input, button, label {
 .badge,
 .btn,
 .promo-shelf-tag,
-.footer-col h4 {
+.footer-col h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -1714,7 +1714,7 @@ body, p, a, li, input, button, label {
 .badge,
 .btn,
 .promo-shelf-tag,
-.footer-col h4 {
+.footer-col h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -2409,3 +2409,7 @@ body, p, a, li, input, button, label {
 .lh-intro__title{ font-family:'Montserrat',sans-serif; font-size:25px; font-weight:800; color:#1f2937; line-height:1.25; margin:0 0 8px; }
 .lh-intro__subtitle{ font-size:15px; color:#6b7280; line-height:1.5; margin:0; }
 @media (max-width:700px){ .lh-intro__title{ font-size:19px; } .lh-intro__subtitle{ font-size:13px; } }
+
+
+/* SEO: titulos del mega-menu como texto (no encabezados) */
+.mega-column .mega-col-title{ font-family:'Montserrat', sans-serif; margin-top:0; }
