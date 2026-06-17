@@ -2413,3 +2413,7 @@ body, p, a, li, input, button, label {
 
 /* SEO: titulos del mega-menu como texto (no encabezados) */
 .mega-column .mega-col-title{ font-family:'Montserrat', sans-serif; margin-top:0; }
+
+
+/* SEO/perf: hero responsive sin deformar */
+#lhCarousel .carousel-inner img{ height:auto; }
