@@ -221,47 +221,46 @@
 
 <!-- ============================================================
      HERO CAROUSEL — L&H Petshop
-     Estructura: [Título] [Foto] [Detalle+Ilustración superpuesta]
      Desktop: 1920×364px | Mobile: 700×350px
      ============================================================ -->
-<div class="container lh-carousel-wrapper pt-3" style=" padding-bottom:0;">
-  <div id="lhCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="border-radius:16px; overflow:hidden;">
+<div class="container lh-carousel-wrapper pt-3" style="padding-bottom:0;">
+  <div id="lhCarousel">
 
-    <div class="carousel-inner">
-      <div class="carousel-item active">
+    <div class="lh-carousel-track">
+      <div class="lh-slide">
         <picture>
           <source media="(max-width:700px)" srcset="banners/banner-01mobile.png">
-          <img src="banners/banner-01.png" class="d-block w-100" width="1920" height="364" fetchpriority="high" alt="Especial Gatos">
+          <img src="banners/banner-01.png" width="1920" height="364" fetchpriority="high" alt="Especial Gatos">
         </picture>
       </div>
-      <div class="carousel-item">
+      <div class="lh-slide">
         <picture>
           <source media="(max-width:700px)" srcset="banners/banner-02mobile.png">
-          <img src="banners/banner-02.png" class="d-block w-100" width="1920" height="364" fetchpriority="high" alt="Ofertas Semanales">
+          <img src="banners/banner-02.png" width="1920" height="364" alt="Ofertas Semanales">
         </picture>
       </div>
-      <div class="carousel-item">
+      <div class="lh-slide">
         <picture>
           <source media="(max-width:700px)" srcset="banners/banner-03mobile.png">
-          <img src="banners/banner-03.png" class="d-block w-100" width="1920" height="364" fetchpriority="high" alt="Especial Perros">
+          <img src="banners/banner-03.png" width="1920" height="364" alt="Especial Perros">
         </picture>
       </div>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#lhCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+    <button class="lh-carousel-control lh-carousel-prev" type="button" aria-label="Anterior">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="15 18 9 12 15 6"/></svg>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#lhCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
+    <button class="lh-carousel-control lh-carousel-next" type="button" aria-label="Siguiente">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="9 6 15 12 9 18"/></svg>
     </button>
 
   </div>
 
   <!-- Indicadores fuera del carousel -->
   <div class="lh-carousel-dots">
-    <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="0" class="lh-dot active" aria-current="true"></button>
-    <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="1" class="lh-dot"></button>
-    <button type="button" data-bs-target="#lhCarousel" data-bs-slide-to="2" class="lh-dot"></button>
+    <button type="button" class="lh-dot active" aria-label="Slide 1"></button>
+    <button type="button" class="lh-dot" aria-label="Slide 2"></button>
+    <button type="button" class="lh-dot" aria-label="Slide 3"></button>
   </div>
 
 </div>
@@ -365,17 +364,17 @@
       <div class="container">
         <!-- Fila de 2 columnas -->
         <div class="top-promo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-          <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md);">
-            <img loading="lazy" decoding="async" src="assets/bnr-col-1.webp" alt="Promo 1" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+          <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md); aspect-ratio: 1892 / 842;">
+            <img loading="lazy" decoding="async" src="assets/bnr-col-1.webp" alt="Promo 1" width="1892" height="842" style="width: 100%; height: 100%; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
           </a>
-          <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md);">
-            <img loading="lazy" decoding="async" src="assets/bnr-col-2.webp" alt="Promo 2" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+          <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md); aspect-ratio: 1891 / 842;">
+            <img loading="lazy" decoding="async" src="assets/bnr-col-2.webp" alt="Promo 2" width="1891" height="842" style="width: 100%; height: 100%; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
           </a>
         </div>
         <!-- Fila horizontal -->
         <div>
-          <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md);">
-            <img loading="lazy" decoding="async" src="assets/bnr-horizontal.webp" alt="Promo Horizontal" style="width: 100%; height: auto; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+          <a href="#" style="display: block; overflow: hidden; border-radius: var(--radius-md); aspect-ratio: 3828 / 553;">
+            <img loading="lazy" decoding="async" src="assets/bnr-horizontal.webp" alt="Promo Horizontal" width="3828" height="553" style="width: 100%; height: 100%; display: block; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
           </a>
         </div>
       </div>
@@ -980,24 +979,67 @@
     </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Sincronizar dots externos con el carousel Bootstrap
-    (function() {
-      const carousel = document.getElementById('lhCarousel');
-      const dots = document.querySelectorAll('.lh-dot');
-      if (!carousel || !dots.length) return;
+    (function () {
+      const root = document.getElementById('lhCarousel');
+      if (!root) return;
 
-      // Click en dot → ir al slide
+      const slides = Array.from(root.querySelectorAll('.lh-slide'));
+      const dots   = Array.from(document.querySelectorAll('.lh-dot'));
+      const prevBtn = root.querySelector('.lh-carousel-prev');
+      const nextBtn = root.querySelector('.lh-carousel-next');
+      const DURATION = 600;
+      const AUTOPLAY = 5000;
+
+      let current = 0;
+      let busy = false;
+      let timer;
+
+      // Posición inicial: primer slide visible, resto a la derecha
+      slides.forEach((s, i) => { s.style.transform = i === 0 ? 'translateX(0)' : 'translateX(100%)'; });
+
+      function goTo(next, forward) {
+        if (busy || next === current) return;
+        busy = true;
+
+        const outgoing = slides[current];
+        const incoming = slides[next];
+
+        // Colocar el entrante fuera de pantalla sin animación
+        incoming.style.transition = 'none';
+        incoming.style.transform = forward ? 'translateX(100%)' : 'translateX(-100%)';
+        incoming.offsetHeight; // reflow
+
+        // Animar ambos
+        incoming.style.transition = '';
+        outgoing.style.transition = '';
+        incoming.style.transform = 'translateX(0)';
+        outgoing.style.transform = forward ? 'translateX(-100%)' : 'translateX(100%)';
+
+        dots.forEach((d, i) => d.classList.toggle('active', i === next));
+        current = next;
+
+        setTimeout(() => { busy = false; }, DURATION);
+      }
+
+      function advance() { goTo((current + 1) % slides.length, true); }
+      function retreat() { goTo((current - 1 + slides.length) % slides.length, false); }
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(advance, AUTOPLAY);
+      }
+
+      prevBtn && prevBtn.addEventListener('click', () => { retreat(); resetTimer(); });
+      nextBtn && nextBtn.addEventListener('click', () => { advance(); resetTimer(); });
       dots.forEach((dot, i) => {
         dot.addEventListener('click', () => {
-          bootstrap.Carousel.getInstance(carousel).to(i);
+          const forward = i !== (current - 1 + slides.length) % slides.length;
+          goTo(i, forward);
+          resetTimer();
         });
       });
 
-      // Slide cambia → actualizar dot activo
-      carousel.addEventListener('slid.bs.carousel', (e) => {
-        dots.forEach(d => d.classList.remove('active'));
-        if (dots[e.to]) dots[e.to].classList.add('active');
-      });
+      resetTimer();
     })();
   </script>
 </body>

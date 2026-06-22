@@ -56,11 +56,83 @@ ul {
 }
 
 /* ==========================================================
-   CAROUSEL DOTS EXTERNOS (estilo Jumbo)
+   CAROUSEL — implementación propia (sin Bootstrap)
    ========================================================== */
 .lh-carousel-wrapper {
   position: relative;
   padding-bottom: 16px;
+}
+
+#lhCarousel {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1920 / 364;
+}
+
+@media (max-width: 700px) {
+  #lhCarousel {
+    aspect-ratio: 700 / 350;
+  }
+}
+
+.lh-carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.lh-slide {
+  position: absolute;
+  inset: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease-in-out;
+}
+
+.lh-slide picture,
+.lh-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lh-carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.lh-carousel-control:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.lh-carousel-prev { left: 16px; }
+.lh-carousel-next { right: 16px; }
+
+.lh-carousel-control svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 700px) {
+  .lh-carousel-control { display: none; }
 }
 
 .lh-carousel-dots {
@@ -86,11 +158,8 @@ ul {
   width: 36px;
 }
 
-/* En desktop: ocultar los dots externos (los internos del bootstrap se ven bien) */
 @media (min-width: 701px) {
-  .lh-carousel-dots {
-    display: none;
-  }
+  .lh-carousel-dots { display: none; }
 }
 
 img {
